@@ -1,0 +1,244 @@
+.header {
+  
+    width: 100%;
+    background-color:#084255;
+    display: flex;
+    border-bottom: 10px solid black;
+    box-shadow: 10px 5px 5px rgb(153, 149, 149);
+    @media screen and (max-width: 800px) {
+        height: 25vh;
+        margin-left: 0;
+        width: 100vw;
+        padding: 1rem;
+    }
+    @media screen and (min-width: 800px) and (max-width: 1420px) {
+        height: 30vh;
+    }
+   
+}
+
+.header__photo {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    height: 100%;
+    text-align: left;
+    margin-left: 5rem;
+    @media screen and (max-width: 1420px) {
+        padding: 0.3rem;
+        margin-left: 0;
+    }
+    @media screen and (max-width: 600px) {
+        padding: 0.1rem;
+        margin-left: 0;
+    }
+ 
+}
+
+.header__text {
+    font-size: xx-large;
+    padding: 1rem;
+    color: white;
+}
+
+.name {
+    color: grey;
+    font-size:2rem;
+    padding:1rem;
+}
+
+.img-profil {
+    border: 5px solid white;
+    border-radius: 50%;
+    max-width: 300px;
+    @media screen and (max-width: 1420px) {
+        width: 10rem;
+    }
+    @media screen and (max-width: 800px) {
+        width: 5rem;
+    }
+}
+
+.img {
+    border-radius: 50%;
+    max-width: 300px;
+}
+
+.infos_autre {
+    padding: 0.3rem;
+    margin-left: 1rem;
+}
+.infos {
+    padding: 1rem 6rem;
+    height: 30vh;
+    background-color: #084255;
+    width: 100%;
+    text-align: left;
+    color: #fff;
+    @media screen and (max-width: 1420px) {
+        font-size: 0.8rem;
+        padding: 1em 1em;
+        height: 10vh;
+    }
+    @media screen and (max-width: 800px) {
+        font-size: 0.9rem;
+        padding: 1em 1em;
+        height: 10vh;
+    }
+    @media screen and (max-width: 800px) {
+        font-size: 0.9rem;
+        padding: 0.5em 0em;
+        height: 10vh;
+    }
+}
+
+.summary {
+    @media screen and (max-width: 1420px) {
+        margin-top: 0rem;
+    }
+    @media screen and (max-width: 420px) {
+        font-size: 0.6rem;
+        padding: 0.5em 0em;
+        height: 10vh;
+    }
+   
+   
+    margin-top: 2rem;
+   margin-left:1rem;
+   background-color: #084255;
+   font-size:xx-large;
+   font-family: 'Bungee';   
+   text-align: center;
+   width: 100%;
+}
+
+.vline {
+    border-top: 2px solid #fff;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    @media screen and (max-width: 1025px) {
+        width: 95%;
+     }
+    @media screen and (max-width: 413px) {
+    width: auto;
+    }
+    width: 113%;
+    padding: 1rem;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1rem;
+    height: 100%;
+    background-color:#084255;
+    width: 20%;
+    text-align: left;
+    color: rgb(10, 10, 10);
+    border-left: #FFF 2px solid;
+    line-height: 50%;
+    
+    @media screen and (max-width: 1420px) {
+        font-size: 0.8rem;
+        border-bottom: 10px solid black;
+    box-shadow: 10px 5px 5px rgb(153, 149, 149);
+    }
+    @media screen and (max-width:1035px) {
+        width: 100%;
+        height: 20vh;
+        margin-left: 0;
+        height: 20vh;
+        border-bottom: 10px solid black;
+        box-shadow: 10px 5px 5px rgb(153, 149, 149);
+        font-size: 0.8rem;
+        display: none;
+    }
+    @media screen and (min-width: 800px) and (max-width: 1420px) {
+        height: 30vh;
+        border-bottom: 10px solid black;
+    box-shadow: 10px 5px 5px rgb(153, 149, 149);
+    font-size: 0.8rem;
+    }
+}
+
+.reseau {
+    display: flex;
+    padding: 1rem;
+    width: 150px;
+}
+
+.login {
+    margin-bottom: 1rem;
+    padding: 1.1rem 3rem;
+    color: white;
+}
+
+.imgreseauFb {
+    width: 40px;
+    position: absolute;
+}
+.imgreseauLi {
+    top: 4.3rem;
+    width: 40px;
+    position: absolute;
+    margin-bottom:1rem;
+}
+
+@keyframes filling {
+    from{
+      background-position: center 25%;
+    }
+    to {
+      background-position: center 50%;
+    }
+  }
+  
+  .container-text {
+    background-image:  url(https://www.citationbonheur.fr/wp-content/uploads/2018/09/L_influence_du_paysage_sur_le_bonheur.jpg);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    color:  #FFFFFF;
+    padding: 0px 17px 1rem;
+    @media screen and (max-width: 1420px) {
+        font-size: 3rem;
+    }  
+    @media screen and (max-width: 800px) {
+        font-size: 1.8rem;
+    }  
+    font-size: 4rem;
+    font-family: 'Bungee', cursive;
+    animation: filling 3s ease forwards;
+  }
+
+  .container-text2 {
+    background-image:  url(https://www.citationbonheur.fr/wp-content/uploads/2018/09/L_influence_du_paysage_sur_le_bonheur.jpg);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    color:  #FFFFFF;
+    padding: 0px 17px 1rem;
+    @media screen and (max-width: 1420px) {
+        font-size: 2rem;
+    }
+    @media screen and (max-width: 980px) {
+        font-size: 1.8rem;
+        margin-top: -17px;
+    }
+    @media screen and (max-width: 800px) {
+        font-size: 1rem;
+        margin-top: -28px;
+        margin-left: -4px;
+    }
+    @media screen and (min-width: 800px) and (max-width: 1600px) {
+        font-size: 1.6rem;
+        padding: 0em 0em;
+        height: 10vh;
+    }
+    font-size: 2rem;
+    font-family: 'Bungee', cursive;
+    animation: filling 3s ease forwards;
+  }
+
+
+  

@@ -21,7 +21,7 @@ const Header = () => (
       </div>
     </div>
 
-    <div className="social">
+    {/* <div className="social">
       <div className="login">
         <img className="imgreseauFb" src={logoFacebook} alt="Facebook" />
         guilhem.moes
@@ -31,7 +31,7 @@ const Header = () => (
         guilhem-moes
       </div>
 
-    </div>
+    </div> */}
 
   </div>
 );

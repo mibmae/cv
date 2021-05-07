@@ -16,7 +16,7 @@ const Formation = () => (
           <div className="formation-contenu">2020 - 2021 Oclock</div>
         </div>
       </div>
-      <div className="col-8">
+      <div className="col-8 bordure">
         <center>
           <div id="SkillBox">
             <center><p>My Skills</p></center>

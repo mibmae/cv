@@ -20,16 +20,17 @@
 .header__photo {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 3rem;
     height: 100%;
     text-align: left;
     margin-left: 5rem;
     @media screen and (max-width: 1420px) {
-        padding: 0.3rem;
+       // padding: 0.3rem;
+        padding: 1rem;
         margin-left: 0;
     }
     @media screen and (max-width: 600px) {
-        padding: 0.1rem;
+        padding: 2rem 0rem;
         margin-left: 0;
     }
  
@@ -39,6 +40,11 @@
     font-size: xx-large;
     padding: 1rem;
     color: white;
+    @media screen and (max-width: 1420px) {
+        // padding: 0.3rem;
+         padding: 3rem;
+         margin-left: 0;
+     }
 }
 
 .name {
@@ -53,9 +59,11 @@
     max-width: 300px;
     @media screen and (max-width: 1420px) {
         width: 10rem;
+        margin: auto;
     }
     @media screen and (max-width: 800px) {
-        width: 5rem;
+        width: 8rem;
+        margin: auto;
     }
 }
 
@@ -67,6 +75,13 @@
 .infos_autre {
     padding: 0.3rem;
     margin-left: 1rem;
+    @media screen and (max-width: 1420px) {
+        font-size: 0.8rem;
+    }
+    @media screen and (max-width: 800px) {
+        font-size: 0.9rem;
+       
+    }
 }
 .infos {
     padding: 1rem 6rem;
@@ -209,7 +224,7 @@
         font-size: 3rem;
     }  
     @media screen and (max-width: 800px) {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }  
     font-size: 4rem;
     font-family: 'Bungee', cursive;

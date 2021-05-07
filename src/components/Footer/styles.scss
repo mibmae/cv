@@ -7,6 +7,9 @@
     font-size: 20px;
     font-family: 'Indie Flower', cursive;
     width: 95%;
+    @media screen and (max-width: 800px) { 
+        width: 100vw;
+    }
     height: auto;
     margin: 40px auto;
     background-color: #fff;

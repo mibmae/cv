@@ -2,8 +2,8 @@ import React from 'react';
 
 import './styles.scss';
 // import Photo from 'https://pvtistes.net/forum/attachments/comment-obtenir-son-pvt-canada-351/21739d1393069621-photos-didentite-demande-de-permis-eic-pvt-jp-etc-photo-identite.jpg';
+import logoLink from 'src/assets/images/LinkedIn-Symbole.png';
 import logoFacebook from './logo-facebook.png';
-import logoLink from "./logolink.png";
 
 const Header = () => (
   <div className="header">
@@ -22,11 +22,15 @@ const Header = () => (
     </div>
 
     <div className="social">
-      <img className="imgreseauFb" src={logoFacebook} alt="Facebook" />
-      <div className="login">guilhem.moes</div>
-      <img className="imgreseauLi" src={logoLink} alt="Facebook" />
-      <div className="login">guilhem.moesd</div>
-     
+      <div className="login">
+        <img className="imgreseauFb" src={logoFacebook} alt="Facebook" />
+        guilhem.moes
+      </div>
+      <div className="login">
+        <img className="imgreseauLi" src={logoLink} alt="Facebook" />
+        guilhem-moes
+      </div>
+
     </div>
 
   </div>

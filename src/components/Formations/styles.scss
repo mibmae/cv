@@ -41,7 +41,8 @@
     width: 100%;
     margin: 12px auto;
    
-    background-color: #084255;
+    //background-color: #084255;
+    background-color: cadetblue;
     color: white ;
     padding: 0.4rem;
     line-height: 1.5;
@@ -75,6 +76,13 @@
     border: 2px solid darkgrey;
     //height: 100vh;
     //width: 20vw;
+}
+
+.col-8 {
+    @media screen and (max-width: 800px) {
+        // display: none;
+       width: 100%;
+     }
 }
 .vlined {
     border-top: 2px solid black;

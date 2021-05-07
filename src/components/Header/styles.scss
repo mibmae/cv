@@ -104,7 +104,7 @@
    
    
     margin-top: 2rem;
-   margin-left:1rem;
+   //margin-left:1rem;
    background-color: #084255;
    font-size:xx-large;
    font-family: 'Bungee';   
@@ -123,7 +123,7 @@
     @media screen and (max-width: 413px) {
     width: auto;
     }
-    width: 113%;
+    width: 100%;
     padding: 1rem;
 }
 
@@ -171,19 +171,23 @@
 
 .login {
     margin-bottom: 1rem;
-    padding: 1.1rem 3rem;
-    color: white;
+    padding: .9rem 3rem;
+    width: max-content;
+    color: #fff;
 }
 
 .imgreseauFb {
-    width: 40px;
+    width: 42px;
+    top: 12px;
     position: absolute;
+    right: 10rem;
 }
 .imgreseauLi {
-    top: 4.3rem;
-    width: 40px;
+    top: 4rem;
+    right: 9.4rem;
+    width: 4.7em;
+    margin-bottom: 1rem;
     position: absolute;
-    margin-bottom:1rem;
 }
 
 @keyframes filling {

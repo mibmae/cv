@@ -1,0 +1,39 @@
+.weather-widget {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  //background-color: rgba(255,255,255,.2);
+  //border-radius: 10px;
+  padding: 3rem;
+  border: 1px solid rgba(255,255,255,.5);
+  color: rgb(45, 61, 61);
+  position: relative;
+  background-color: antiquewhite;
+  //margin: 2rem;
+  &__city {
+    @media screen and (max-width: 600px) {
+      font-size: 2rem;
+      margin-left: 0;
+  }
+    font-size: 3em;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+  &__temperature {
+    @media screen and (max-width: 600px) {
+      font-size: 2rem;
+    }
+    font-size: 3em;
+    margin-bottom: 0;
+  }
+  &__icon {
+    @media screen and (max-width: 600px) {
+      width: 110px;
+    }
+    width: 110px;
+    position: absolute;
+    top: -31px;
+    right: 0px;
+  }
+}

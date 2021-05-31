@@ -1,18 +1,20 @@
 .header {
-  
+    font-family: 'DejaVu Sans Mono';
     width: 100%;
-    background-color:#084255;
+    //background-color:#084255;
+    background-color:#f6d300;
+   // background:linear-gradient(rgb(110, 0, 255), rgb(255, 118, 0));
     display: flex;
     border-bottom: 10px solid black;
-    box-shadow: 10px 5px 5px rgb(153, 149, 149);
+    //box-shadow: 10px 5px 5px rgb(153, 149, 149);
     @media screen and (max-width: 800px) {
         height: 25vh;
         margin-left: 0;
         width: 100vw;
-        padding: 1rem;
+       // padding: 1rem;
     }
     @media screen and (min-width: 800px) and (max-width: 1420px) {
-        height: 30vh;
+        height: 35vh;
     }
    
 }
@@ -23,14 +25,13 @@
     padding: 3rem;
     height: 100%;
     text-align: left;
-    margin-left: 5rem;
+    margin-right: 5rem;
     @media screen and (max-width: 1420px) {
        // padding: 0.3rem;
         padding: 1rem;
         margin-left: 0;
     }
     @media screen and (max-width: 600px) {
-        padding: 2rem 0rem;
         margin-left: 0;
     }
  
@@ -51,14 +52,19 @@
     color: grey;
     font-size:2rem;
     padding:1rem;
+    @media screen and (max-width:1300px) {
+        // padding: 0.3rem;
+        font-size: 0.5rem;
+     }
 }
 
 .img-profil {
     border: 5px solid white;
     border-radius: 50%;
-    max-width: 300px;
+    max-width: 16rem;
+    transition: transform 330ms ease-in-out;
     @media screen and (max-width: 1420px) {
-        width: 10rem;
+        width: 14rem;
         margin: auto;
     }
     @media screen and (max-width: 800px) {
@@ -73,20 +79,22 @@
 }
 
 .infos_autre {
-    padding: 0.3rem;
-    margin-left: 1rem;
-    @media screen and (max-width: 1420px) {
-        font-size: 0.8rem;
-    }
-    @media screen and (max-width: 800px) {
-        font-size: 0.9rem;
-       
-    }
+   
+
 }
+
+// .infos_name {
+//     padding-top: 1rem;
+//     color: black;
+//     font-size: 53pt;
+//     font-family: 'DejaVu Sans Mono';
+// }
+
 .infos {
     padding: 1rem 6rem;
     height: 30vh;
-    background-color: #084255;
+    //background-color: #084255;
+    background-color:#f6d300;
     width: 100%;
     text-align: left;
     color: #fff;
@@ -97,13 +105,59 @@
     }
     @media screen and (max-width: 800px) {
         font-size: 0.9rem;
-        padding: 1em 1em;
-        height: 10vh;
-    }
-    @media screen and (max-width: 800px) {
-        font-size: 0.9rem;
         padding: 0.5em 0em;
         height: 10vh;
+    }
+    &_name {
+        padding-top: 1rem;
+        color: black;
+        font-size: 70pt;
+        font-family: 'DejaVu Sans Mono';
+        margin-left: 15%;
+        margin-bottom: 1rem;
+        @media screen and (max-width: 1200px) {
+        font-size: 2.3rem;
+        padding: 0.5em 0em;
+        height: 10vh;
+    }
+    }
+    &_title {
+        background-color: black;
+        color: #f6d300;
+        font-size: 25px;
+        text-align: center;
+        width: 60%;
+        padding:1rem;
+        margin-left: 12rem;
+        margin-bottom: 1.5rem;
+        @media screen and (max-width: 1200px) {
+            font-size: 1.1rem;
+            padding: 1.5em 0em;
+            height: 10vh;
+            margin-left: 2rem;
+            margin-top: -1rem;
+        }
+    }
+    &_intro {
+        padding: 0.3rem;
+        margin-left: 1rem;
+        color: black;
+        @media screen and (max-width: 1201px) {
+            font-size: 0.8rem;
+            //transform: rotateY(180deg);
+        }
+        @media screen and (max-width: 800px) {
+            font-size: 0.9rem;
+           
+        }
+        @media screen and (max-width: 1200px) {
+        font-size: 1.1rem;
+        }
+        &_text {
+            margin-top: 1rem;
+            text-align:center;
+            color: black;
+        }
     }
 }
 

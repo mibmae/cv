@@ -28,7 +28,8 @@
     margin: 1rem auto;
     padding: 1rem;
     font-size:xx-large;
-    background-color: #FCB442;
+    //background-color: #FCB442;
+    background-color: #f6d300;
 }
 
 .row-formation {
@@ -53,7 +54,82 @@
     text-align: initial;
 }
 
+.formation {
+    &_title {
+        font-size: 1.7rem;
+        border-bottom: 1px solid black;
+        text-align: left;
+        padding: 1rem;
+    }
+    &_content {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 1.3rem;
+    &-date {
+        padding-top: 1rem;
+        font-size: 1.2rem;
+        text-align: left;
+        width: 100%;
+    }
+    &-degree {
+        font-size: 1.2rem;
+        padding-top: 1rem;
+        width: 100%;
+        text-align: left;
+        margin-left: -12rem;
+    }
+    &-where {
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 1rem;
+    }
+    }
+}
 
+.experiences {
+    &_container {
+        display: flex;
+        justify-content:space-between;
+        flex-wrap: wrap;
+        background-color: #f6d300;
+    }
+    &_space {
+        padding: 1rem;
+    }
+    &_title {
+        font-size: 1.7rem;
+        border-bottom: 1px solid black;
+        text-align: left;
+        padding: 1rem;
+    }
+    &_name {
+        display: flex;
+        font-size: 1.2rem;
+        text-align: left;
+        padding: 1rem;
+    }
+    &_date {
+        text-align: right;
+        padding: 1rem;
+    }
+    &_summary {
+        text-align: left;
+        padding: 1rem;
+        &-tasks {
+            text-align: left;
+            margin-left: 3rem;
+            padding: 0.4rem;
+        }
+        &-tasks-under {
+            margin-left: -20rem;
+        }
+        &-brand {
+            padding: 1rem;
+            font-weight: bold;
+            text-decoration: underline black;
+        }
+    }
+}
 .col-compet {
     width: 30%;
 }

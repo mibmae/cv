@@ -31,9 +31,19 @@
     @media screen and (max-width: 600px) {
       width: 110px;
     }
+    @media screen and (max-width: 1600px) {
+      width: 110px;
+      left: 76%;
+    }
+    
+    @media screen and (max-width: 1200px) {
+      width: 110px;
+      left: 57%;
+    }
     width: 110px;
     position: absolute;
-    top: -31px;
-    right: 0px;
+    top: 13px;
+    left: 84%;
+    right: 0;
   }
 }

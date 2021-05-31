@@ -3,9 +3,14 @@
 
 body {
   background-color: #FFFF;
-  font-family: 'Poppins', sans-serif;
+  //font-family: 'Poppins', sans-serif;
+  font-family: 'DejaVu Sans Mono';
 }
 
+a:hover {
+  color:coral;
+  text-decoration: none;
+}
 /* 
   // or you can import your own font
   @font-face {

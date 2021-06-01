@@ -9,7 +9,7 @@ const Header = () => (
     
     <div className="infos">
       <div className="infos_name">GUILHEM MOËS</div>
-      <div className="infos_title">Développeur Web Javascript FullStack
+      <div className="bandeau_head">Développeur Web Javascript FullStack
       </div>
       <div className="infos_intro">Je m'appelle Guilhem, passionné d'informatique et de développement Web depuis tout jeune,</div>
       <div className="infos_intro"> j'ai décidé d'en faire enfin mon mêtier.</div>
@@ -18,7 +18,6 @@ const Header = () => (
       </div> */}
     </div>
     <div className="header__photo">
-      {/* <img className="img-profil" src="https://pvtistes.net/forum/attachments/comment-obtenir-son-pvt-canada-351/21739d1393069621-photos-didentite-demande-de-permis-eic-pvt-jp-etc-photo-identite.jpg" alt="myPic" /> */}
       <img className="img-profil" src={mypic} alt="myPic" />
     </div>
 

@@ -100,8 +100,10 @@
     }
     &_name {
         display: flex;
-        font-size: 1.2rem;
+        @media screen and (max-width: 800px) { font-size:  1.4rem; }
+        font-size: 1.8rem;
         text-align: left;
+        font-weight: bold;
         padding: 1rem;
     }
     &_date {
@@ -111,7 +113,7 @@
         padding: 1rem;
     }
     &_summary {
-        @media screen and (max-width: 800px) { font-size:  1.4rem; }
+        @media screen and (max-width: 800px) { font-size:  1.4rem; padding: 0.1rem; }
         text-align: left;
         padding: 1rem;
         font-size: 1.5rem;
@@ -124,7 +126,8 @@
         }
         &-tasks-under {
             font-size: 1.5rem;
-            @media screen and (max-width: 800px) { font-size:  1.2rem; margin-left: -150px; }
+            @media screen and (max-width: 600px) { font-size:  1.2rem; margin-left: 44px; }
+            @media screen and (min-width: 600px) and (max-width: 800px) { font-size:  1.2rem; margin-left: -150px; }
             @media screen and (min-width: 801px) and (max-width: 1236px) { margin-left: 80px; }
             margin-left: -20rem;
         }

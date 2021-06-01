@@ -1,11 +1,21 @@
 .bandeau {
         font-family: 'DejaVu Sans Mono';
         display: flex;
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         justify-content: space-between;
         padding: 2rem;
         background-color:#084255;
         width:100%;
         background-color: black;
         color: #f6d300;
+        @media screen and (max-width: 600px) {
+                // font-size: 1.1rem;
+                // padding: 1.5em 0em;
+                margin-top: -3rem;
+            }
+            @media screen and (max-width: 500px) {
+                width: 100%;
+                font-size: 1.3rem;
+                margin-top: 0rem;
+            }
 }

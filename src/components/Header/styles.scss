@@ -5,13 +5,13 @@
     background-color:#f6d300;
    // background:linear-gradient(rgb(110, 0, 255), rgb(255, 118, 0));
     display: flex;
-    border-bottom: 10px solid black;
+    // border-bottom: 10px solid black;
     height: 35vh;
     //box-shadow: 10px 5px 5px rgb(153, 149, 149);
-    @media screen and (max-width: 800px) {
-        height: 25vh;
+    @media screen and (max-width: 500px) {
+        height: 42vh;
         margin-left: 0;
-        width: 100vw;
+        width: 100%;
        // padding: 1rem;
     }
     @media screen and (min-width: 800px) and (max-width: 1420px) {
@@ -30,8 +30,10 @@
             padding: 1rem;
             margin-left: 0;
         }
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 900px) {
+            display: none;
             margin-left: 0;
+            padding: 0;
         }
      
     }
@@ -61,17 +63,18 @@
 
 .img-profil {
     border: 5px solid white;
-    border-radius: 50%;
-    max-width: 13rem;
+    border-radius: 32%;
+    max-width: 19rem;
+    margin: -2rem;
     transition: transform 330ms ease-in-out;
     @media screen and (max-width: 1420px) {
         width: 12rem;
         margin: auto;
     }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 900px) {
         display: none;
-        width: 8rem;
-        margin: auto;
+        width: 0rem;
+        margin: 0;
     }
 }
 
@@ -90,7 +93,7 @@
     color: #fff;
     @media screen and (max-width: 1420px) {
         font-size: 0.8rem;
-        padding: 1em 1em;
+        // padding: 1em 1em;
         height: 10vh;
     }
     @media screen and (max-width: 800px) {
@@ -106,14 +109,17 @@
         margin-left: 15%;
         margin-bottom: 1rem;
         @media screen and (max-width: 1200px) {
-        font-size: 2.3rem;
+        font-size: 4.3rem;
         padding: 0.5em 0em;
         height: 10vh;
+        margin: 0rem 16rem;
     }
-        @media screen and (max-width: 700px) {
+        @media screen and (max-width: 800px) {
+            width: 70%;
         font-size: 3rem;
         padding: 0.5em 0em;
         height: 10vh;
+        margin: 1rem 7rem 5rem;
     }
     }
     &_title {
@@ -126,10 +132,18 @@
         margin-left: 12rem;
         margin-bottom: 1.5rem;
         @media screen and (max-width: 800px) {
+            width: 100%;
             font-size: 1.1rem;
             padding: 1.5em 0em;
-            margin-left: 2rem;
+            margin-left: 3.5rem;
             margin-top: -3rem;
+        }
+        @media screen and (max-width: 540px) {
+            width: 100%;
+            font-size: 1.3rem;
+            padding: 1.5em 0em;
+            margin-left: 0rem;
+            margin-top: 0rem;
         }
     }
     &_intro {
@@ -142,7 +156,7 @@
             //transform: rotateY(180deg);
         }
         @media screen and (max-width: 800px) {
-            margin: 0 3rem;
+            margin: 1rem 1rem;
             font-size: 1rem;
             width: 77%;
             //transform: rotateY(180deg);
@@ -150,6 +164,11 @@
         
         @media screen and (max-width: 800px) {
         font-size: 1.1rem;
+        }
+        @media screen and (max-width: 540px) {
+            width: 97%;
+            text-align: center;
+         
         }
         &_text {
             @media screen and (max-width: 1201px) {
@@ -159,9 +178,13 @@
                 //transform: rotateY(180deg);
             }
             @media screen and (max-width: 800px) {
-                margin: 0 3rem;
+                margin: 0;
                 margin-top: 0.7rem;
                 //transform: rotateY(180deg);
+            }
+            @media screen and (max-width: 5400px) {
+                width: 100%;
+               
             }
             margin-top: 1rem;
             text-align:center;
@@ -324,4 +347,31 @@
   }
 
 
-  
+  .bandeau_head {
+    font-family: 'DejaVu Sans Mono';
+    display: flex;
+    font-size: 2.5rem;
+    justify-content: space-between;
+    padding: 2rem;
+    width:60%;
+    background-color: black;
+    color: #f6d300;
+    margin: -2rem 0rem 1rem 13rem;
+    @media screen and (max-width: 800px) {
+        margin: 0rem 0rem;
+        font-size: 2rem;
+        width: 100%;
+        //transform: rotateY(180deg);
+    }
+    @media screen and (max-width: 600px) {
+            // font-size: 1.1rem;
+            // padding: 1.5em 0em;
+            width: 100%;
+            margin-top: -3rem;
+        }
+        @media screen and (max-width: 500px) {
+            width: 100%;
+            font-size: 1.4rem;
+        
+        }
+}

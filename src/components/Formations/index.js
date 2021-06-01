@@ -32,7 +32,7 @@ const Formation = () => (
 
         <div className="experiences_title">Expériences</div>
         <div className="experiences_container">
-          <div className="experiences_name">Développeur Web Front End</div>
+          <div className="experiences_name">Développeur Web Front</div>
           <div className="experiences_date">04.2021 - 05.2021</div>
         </div>
         <div className="experiences_summary-brand">Atypeek | www.atypeek.xyz</div>
@@ -52,7 +52,7 @@ const Formation = () => (
         <div className="experiences_summary-tasks">- Consommation d'un API maison, et Publique</div>
         <div className="experiences_space" />
         <div className="experiences_container">
-          <div className="experiences_name">Vendeur Technique - Employé Commercial</div>
+          <div className="experiences_name">Vendeur Technique</div>
           <div className="experiences_date">08.2007 - 09.2020</div>
         </div>
         <div className="experiences_summary-brand">Cora Alès</div>
@@ -68,7 +68,7 @@ const Formation = () => (
           <div className="experiences_name">Chef d'entreprise</div>
           <div className="experiences_date">06.2006 - 08.2007</div>
         </div>
-        <div className="experiences_summary-brand">2AMicro</div>
+        <div className="experiences_summary-brand">2A Micro</div>
         <div className="experiences_summary">- Création de site Internet</div>
         <div className="experiences_summary">- Maintenance de site Internet</div>
         <div className="experiences_summary">- Formation informatique - Web aux particuliers / professionnels</div>

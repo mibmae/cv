@@ -5,7 +5,7 @@ import './styles.scss';
 const Footer = () => (
     <div className="container-fluid">
       <div className="row footer">
-       Footer
+       <copyright>Guilhem</copyright>
        </div>
     </div>
     );

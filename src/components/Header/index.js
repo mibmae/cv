@@ -1,17 +1,13 @@
 import React from 'react';
-
 import './styles.scss';
 // import Photo from 'https://pvtistes.net/forum/attachments/comment-obtenir-son-pvt-canada-351/21739d1393069621-photos-didentite-demande-de-permis-eic-pvt-jp-etc-photo-identite.jpg';
-import logoLink from 'src/assets/images/LinkedIn-Symbole.png';
-import logoFacebook from './logo-facebook.png';
+
+import mypic from 'src/assets/images/photo.jpg';
 
 const Header = () => (
   <div className="header">
     
     <div className="infos">
-
-      {/*<div className="container-text">Guilhem Moes</div>*/}
-      
       <div className="infos_name">GUILHEM MOËS</div>
       <div className="infos_title">Développeur Web Javascript FullStack
       </div>
@@ -22,7 +18,8 @@ const Header = () => (
       </div> */}
     </div>
     <div className="header__photo">
-      <img className="img-profil" src="https://pvtistes.net/forum/attachments/comment-obtenir-son-pvt-canada-351/21739d1393069621-photos-didentite-demande-de-permis-eic-pvt-jp-etc-photo-identite.jpg" alt="myPic" />
+      {/* <img className="img-profil" src="https://pvtistes.net/forum/attachments/comment-obtenir-son-pvt-canada-351/21739d1393069621-photos-didentite-demande-de-permis-eic-pvt-jp-etc-photo-identite.jpg" alt="myPic" /> */}
+      <img className="img-profil" src={mypic} alt="myPic" />
     </div>
 
     {/* <div className="social">

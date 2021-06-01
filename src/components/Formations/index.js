@@ -1,23 +1,16 @@
 import React from 'react';
 
 import './styles.scss';
-import { Icon, Label } from 'semantic-ui-react';
+import Left from 'src/components/Left';
+import { Icon } from 'semantic-ui-react';
 import nodelogo from 'src/assets/images/node.png';
 
 const Formation = () => (
   <div className="container-fluid">
     <div className="row">
-      <div className="col-4 bord"> <div className="titlea">FOLLOW ME</div>
+      <Left />
+      {/*  */}
 
-        <div className="row-formation"><a href="http://www.linkedIn.com/in/guilhem-moes" target="_blank" rel="noreferrer">LinkedIn</a></div>
-        <div className="titlea">Contact</div>
-        <div className="row-formation">
-          <div className="formation-contenu">06 22 99 70 83<div>Diplome</div></div>
-          <div className="formation-contenu">2020 - 2021 Oclock <div>Diplome</div></div>
-          <div className="formation-contenu">2020 - 2021 Oclock <div>Diplome</div></div>
-          <div className="formation-contenu">2020 - 2021 Oclock</div>
-        </div>
-      </div>
       <div className="col-8 bordure">
 
         <div className="formation_title">Formation</div>
@@ -70,21 +63,22 @@ const Formation = () => (
         <div className="experiences_summary-tasks">- Matériel Electroménager</div>
         <div className="experiences_summary-tasks">- Matériel de Jardin</div>
         <div className="experiences_summary-tasks">- Jouets</div>
-        <div className="experiences_summary">Création d'un projet de développement Web</div>
+        <div className="experiences_space" />
         <div className="experiences_container">
           <div className="experiences_name">Chef d'entreprise</div>
           <div className="experiences_date">06.2006 - 08.2007</div>
         </div>
         <div className="experiences_summary-brand">2AMicro</div>
-        <div className="experiences_summary-tasks">- Création de site Internet</div>
-        <div className="experiences_summary-tasks">- Maintenance de site Internet</div>
-        <div className="experiences_summary-tasks">- Formation informatique - Web aux particuliers / professionnels</div>
-        <div className="experiences_summary-tasks">- Montage de machine informatique sur mesure</div>
-        <div className="experiences_summary-tasks">- Réparation de matériel informatique</div>
+        <div className="experiences_summary">- Création de site Internet</div>
+        <div className="experiences_summary">- Maintenance de site Internet</div>
+        <div className="experiences_summary">- Formation informatique - Web aux particuliers / professionnels</div>
+        <div className="experiences_summary">- Montage de machine informatique sur mesure</div>
+        <div className="experiences_summary">- Réparation de matériel informatique</div>
       </div>
       <div className="experiences_space" />
     </div>
   </div>
+
 );
 
 export default Formation;

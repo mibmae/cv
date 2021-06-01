@@ -1,0 +1,165 @@
+.contact {
+    &_contenu {
+        color:black;
+        padding: 1rem;
+        display: flex;
+    }  
+}
+
+.tel_logo {
+    width: 2rem;
+    vertical-align: sub;
+}
+
+.row-contact {
+    font-size: 1.4rem;
+    @media screen and (max-width: 800px) {
+        font-size: 1.4rem;
+        margin: 1rem;
+        width: 100%;
+      
+    }
+    border-radius: 1rem;
+    width: 100%;
+    margin: 0.3rem auto;
+    text-align: left;
+   
+    //background-color: #084255;
+    padding: 0.4rem;
+    // line-height: 1.5;
+
+    &_logo {
+      
+        width: 1.7rem;
+        vertical-align: sub;
+        margin: 0 5px;
+    }
+}
+.row-skills {
+    @media screen and (max-width: 800px) {
+        font-size: 1rem;
+        margin: 1rem;
+      
+    }
+    border-radius: 1rem;
+    width: 85%;
+    margin: 0.3rem auto;
+    text-align: left;
+   
+    //background-color: #084255;
+    padding: 0.4rem;
+    // line-height: 1.5;
+
+    &_logo {
+        text-align: center;
+        width: 90%;
+        vertical-align: sub;
+        margin: auto;
+    }
+}
+.hobbies_container {
+    @media screen and (max-width: 800px) {
+        font-size: 2rem;
+        margin: 1rem;
+        display: flex;
+      
+    }
+}
+.langage_container {
+    display: flex;
+    @media screen and (max-width: 800px) {
+        font-size: 2rem;
+        margin: 1rem;
+        display: flex;
+        width: 100%;
+        align-content: space-between;
+      
+    }
+}
+
+
+.row-language {
+    display: flex;
+    font-size: 1.3rem;
+    @media screen and (max-width: 800px) {
+        font-size: 1.4rem;
+        margin: 1rem;
+      
+    }
+    border-radius: 1rem;
+    width: 85%;
+    margin: 0.3rem auto;
+    text-align: left;
+   justify-content: space-around;
+    //background-color: #084255;
+    padding: 0.4rem;
+    // line-height: 1.5;
+
+    &_logo {
+        text-align: center;
+        width: 3rem;
+        vertical-align: sub;
+        margin: auto;
+    }
+}
+.hobbies-text {
+    display: flex;
+    font-size: 1.4rem;
+    @media screen and (max-width: 800px) {
+        font-size: 1.4rem;
+        margin: 1rem;
+      
+    }
+    border-radius: 1rem;
+    width: 100%;
+    margin: 0.3rem auto;
+    text-align: left;
+   justify-content: space-between;
+    //background-color: #084255;
+    padding: 0.4rem;
+    // line-height: 1.5;
+
+    &_logo {
+        text-align: center;
+        width: 90%;
+        vertical-align: sub;
+        margin: auto;
+    }
+}
+
+.row-followme {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.bord {
+    @media screen and (max-width: 800px) {
+       // display: none;
+        font-size: 0.5rem;
+        flex-wrap: wrap;
+        display: contents;
+        width: 100%;
+    }
+    //padding: 0.1rem 0;
+    border-right: 2px solid darkgrey;
+    border-top: 2px solid darkgrey;
+    padding: 1rem;
+    //height: 100vh;
+    //width: 20vw;
+}
+
+.titlea {
+    @media screen and (max-width: 800px) {
+        font-size: 1rem;
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+        padding: 2rem;
+        font-size: 2rem;
+    }
+    //border-radius: 1rem;
+    margin: 2rem auto;
+    padding: 1rem;
+    font-size:xx-large;
+    //background-color: #FCB442;
+    background-color: #f6d300;
+}

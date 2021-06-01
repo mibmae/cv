@@ -1,4 +1,3 @@
-@use 'reset';
 @use 'vars';
 
 body {
@@ -10,6 +9,11 @@ body {
 a:hover {
   color:coral;
   text-decoration: none;
+}
+
+.root {
+  background-color: black;
+  width:fit-content;
 }
 /* 
   // or you can import your own font

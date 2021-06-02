@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './styles.scss';
 // import Photo from 'https://pvtistes.net/forum/attachments/comment-obtenir-son-pvt-canada-351/21739d1393069621-photos-didentite-demande-de-permis-eic-pvt-jp-etc-photo-identite.jpg';
 
 import mypic from 'src/assets/images/photo.jpg';
+import { Modal, Button } from 'semantic-ui-react';
 
-const Header = () => (
+const Header = (openStatus) => {
+  const [open, setOpen] = useState(openStatus);
+
+return (
   <div className="header">
-    
     <div className="infos">
       <div className="infos_name">GUILHEM MOËS</div>
       <div className="bandeau_head">Développeur Web Javascript FullStack
@@ -20,7 +23,7 @@ const Header = () => (
     <div className="header__photo">
       <img className="img-profil" src={mypic} alt="myPic" />
     </div>
-
+   
     {/* <div className="social">
       <div className="login">
         <img className="imgreseauFb" src={logoFacebook} alt="Facebook" />
@@ -35,5 +38,6 @@ const Header = () => (
 
   </div>
 );
+  }
 
 export default Header;

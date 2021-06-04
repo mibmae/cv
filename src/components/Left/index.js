@@ -28,10 +28,10 @@ const Left = () => (
       <div className="row-language"><img src={french} className="row-language_logo" alt="linkedinlogo" />Français </div>
     </div>
     <div className="titlea">Hobbies</div>
-    <div className="hobbies_container">
-      <div className="hobbies-text"><img src={mail} className="row-contact_logo" alt="linkedinlogo" />Technologies </div>
-      <div className="hobbies-text"><img src={mail} className="row-contact_logo" alt="linkedinlogo" />Musique </div>
-      <div className="hobbies-text"><img src={mail} className="row-contact_logo" alt="linkedinlogo" />Tennis </div>
+    <div className="contact_container">
+      <div className="row-contact"><img src={mail} className="row-contact_logo" alt="linkedinlogo" />Technologies </div>
+      <div className="row-contact"><img src={mail} className="row-contact_logo" alt="linkedinlogo" />Musique </div>
+      <div className="row-contact"><img src={mail} className="row-contact_logo" alt="linkedinlogo" />Tennis </div>
     </div>
   </div>
 

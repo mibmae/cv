@@ -44,11 +44,17 @@
         font-size: 1.2rem;
         text-align: left;
         width: 100%;
+        @media screen and (max-width: 500px) {
+        padding-top: 1rem;
+        font-size: 1.2rem;
+        text-align: left;
+        width: 42%;
+        }
     }
     &-degree {
         @media screen and (max-width: 800px) {
             font-size: 1.4rem;
-            margin: 1rem;
+            margin: 0.2rem;
             text-decoration: underline;
             display: flex;
           
@@ -62,7 +68,6 @@
     &-where {
         @media screen and (max-width: 800px) {
             font-size: 1.2rem;
-            margin: 1rem;
             display: flex;
           
         }
@@ -87,14 +92,15 @@
         justify-content:space-between;
         flex-wrap: wrap;
         background-color: #f6d300;
+        border-top: 1px solid black;
     }
     &_space {
         padding: 1rem;
     }
     &_title {
-       
+       margin-top: 3rem;
         font-size: 1.7rem;
-        border-bottom: 1px solid black;
+        // border-bottom: 1px solid black;
         text-align: left;
         padding: 1rem;
     }

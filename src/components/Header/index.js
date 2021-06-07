@@ -1,3 +1,4 @@
+
 import React from 'react';
 import {
   BrowserRouter as Router,
@@ -5,11 +6,15 @@ import {
   Route,
   NavLink,
 } from 'react-router-dom';
+
+import React, { useState } from 'react';
+
 import './styles.scss';
 import Sidebar from 'src/components/Sidebar';
 // import Photo from 'https://pvtistes.net/forum/attachments/comment-obtenir-son-pvt-canada-351/21739d1393069621-photos-didentite-demande-de-permis-eic-pvt-jp-etc-photo-identite.jpg';
 
 import mypic from 'src/assets/images/photo.jpg';
+
 import github from 'src/assets/images/github.png';
 import linkedin from 'src/assets/images/linkedin.png';
 import facebook from 'src/assets/images/facebook.png';
@@ -51,6 +56,30 @@ const Header = () => (
       </div>
 
       {/* <div className="social">
+
+import { Modal, Button } from 'semantic-ui-react';
+
+const Header = (openStatus) => {
+  const [open, setOpen] = useState(openStatus);
+
+return (
+  <div className="header">
+    <div className="infos">
+      <div className="infos_name">GUILHEM MOËS</div>
+      <div className="bandeau_head">Développeur Web Javascript FullStack
+      </div>
+      <div className="infos_intro">Je m'appelle Guilhem, passionné d'informatique et de développement Web depuis tout jeune,</div>
+      <div className="infos_intro"> j'ai décidé d'en faire enfin mon mêtier.</div>
+      <div className="infos_intro_text">"Une passion, bien plus qu'un mêtier !"</div>
+      {/* <div className="summary container-text2">Développeur Web Javascript FullStack
+      </div> */}
+    </div>
+    <div className="header__photo">
+      <img className="img-profil" src={mypic} alt="myPic" />
+    </div>
+   
+    {/* <div className="social">
+
       <div className="login">
         <img className="imgreseauFb" src={logoFacebook} alt="Facebook" />
         guilhem.moes
@@ -65,5 +94,6 @@ const Header = () => (
     </div>
   </>
 );
+  }
 
 export default Header;

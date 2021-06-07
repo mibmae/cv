@@ -24,7 +24,7 @@ const Header = () => (
     <Sidebar width={300} height="100%">
       <Router>
         <h1 className="menu_title">MENU</h1>
-        <NavLink to="/" className="link"><h2 className="menu_subtitle"><img src={home} className="menu_logo" alt="Accueil" />Home</h2></NavLink>
+        <NavLink to="/" className="link"><h2 className="menu_subtitle"><img src={homeinverted} className="menu_logo" alt="Accueil" />Home</h2></NavLink>
         <h2 className="menu_subtitle">Mes Projets</h2>
         <NavLink to="/" className="link"><h2 className="menu_subtitle"><img src={github} className="menu_logo" alt="Github" />Github</h2></NavLink>
         <NavLink to="/" className="link"><h2 className="menu_subtitle"><img src={linkedin} className="menu_logo" alt="Linkedin" />LinkedIn</h2></NavLink>

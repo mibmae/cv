@@ -20,24 +20,130 @@
 .projets {
     &_title {
         font-size: 1.7rem;
-        border-bottom: 1px solid black;
-        text-align: left;
         padding: 1rem;
     }
     &_reas {
         display: flex;
-       justify-content: space-between;
-        padding: 9rem 0rem 13rem 9rem;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        margin: 2rem 1rem 0rem 1rem;
+        // padding: 9rem 0rem 13rem 9rem;
+    }
+    &_capture {
+        width: 80%;
+        border: 1px solid #f6d300;
+        &:hover {
+            border: 1px solid black;
+            opacity: 0.2;
+            content: "Salut Mec";
+        }
+    
+    }
+    &_capture_mobile {
+        width: 80%;
+        border: 1px solid #f6d300;
+    
+    }
+    &_container {
+        width: fit-content;
     }
 }
+
+.link {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.p_hover {
+    font-size: 1.5rem;
+    color:#f6d300;
+}
+    
 
 @media screen and (max-width: 800px) {
     .mob {
         display:none;
     }
+    .figcaption {
+        display:none;
+    }
+    .cap-bot {
+        z-index: -1;
+    }
+   
+
 }
+@media screen and (min-width: 300px) and (max-width: 800px) {
+    .projets_title {
+        display: block;
+    }
   
-.logo {
-    width: 20%;
-    text-align: left;
 }
+@media screen and (min-width: 800px) {
+    .projets_title {
+        display: none;
+        
+    }
+    
+}
+
+@media screen and (min-width: 300px) and (max-width: 800px) {
+.link_mobile {
+    display: block;
+    }
+.projets_capture {
+    display: none;
+}
+}
+@media screen and (min-width: 801px) {
+    .link_mobile {
+        display: none;
+    }
+}
+
+
+figure {
+    display: block;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 0 20px 20px 0;
+    z-index: 0;
+  }
+  figcaption {
+    position: absolute;
+    background: black;
+    background: rgba(0,0,0,0.75);
+    color: white;
+    padding: 10px 20px;
+    opacity: 0;
+    // -webkit-transition: all 0.6s ease;
+    // -moz-transition:    all 0.6s ease;
+    // -o-transition:      all 0.6s ease;
+  }
+  figure:hover figcaption {
+    opacity: 1;
+  }
+  
+  figure:hover:before {
+    opacity: 0;
+  }
+  
+  .cap-left:before {  bottom: 10px; left: 10px; }
+  .cap-left figcaption { bottom: 0; left: 5%; width:90%; }
+  .cap-left:hover figcaption { left: 0; }
+  
+  .cap-right:before { bottom: 10px; right: 10px; }
+  .cap-right figcaption { bottom: 0; right: -30%; }
+  .cap-right:hover figcaption { right: 0; }
+  
+  .cap-top:before { top: 10px; left: 10px; }
+  .cap-top figcaption { left: 0; top: -30%; }
+  .cap-top:hover figcaption { top: 0; }
+  
+  .cap-bot:before { bottom: 10px; left: 10px; }
+  .cap-bot figcaption { left: 10%; bottom: -30%; width: 80%; height: 50%; }
+  .cap-bot:hover figcaption { bottom: 50%; }

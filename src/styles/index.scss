@@ -36,3 +36,16 @@ a {
     font-family: 'Roboto', sans-serif;
   }
 */
+@media screen and (max-width: 800px) {
+  .row {
+    padding-right: 0;
+    padding-left: 0;
+
+  }
+  .nopadding {
+    padding-right: 0;
+    padding-left: 0;
+
+  }
+}
+

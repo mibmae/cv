@@ -1,0 +1,43 @@
+.container-fluid { 
+    height: 100%;
+    width: 100%;
+}
+
+.col {
+    padding: 1rem;
+    border: 1px solid darkgrey;
+    @media screen and (max-width: 800px) {
+        // display: none;
+         font-size: 0.5rem;
+         flex-wrap: wrap;
+       
+     }
+ 
+}
+
+
+
+.projets {
+    &_title {
+        font-size: 1.7rem;
+        border-bottom: 1px solid black;
+        text-align: left;
+        padding: 1rem;
+    }
+    &_reas {
+        display: flex;
+       justify-content: space-between;
+        padding: 9rem 0rem 13rem 9rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .mob {
+        display:none;
+    }
+}
+  
+.logo {
+    width: 20%;
+    text-align: left;
+}

@@ -161,3 +161,10 @@
     //background-color: #FCB442;
     background-color: #f6d300;
 }
+
+@media screen and (max-width: 800px) {
+    .mob {
+        display:none;
+    }
+}
+  

@@ -36,7 +36,7 @@ const Sidebar = ({ width, height, children }) => {
           }}
         >|||
         </button>
-        <div className="content">{children}</div>
+        <div className="content" onClick={() => toggleMenu()}>{children}</div>
       </div>
     </>
   );
@@ -45,7 +45,7 @@ const Sidebar = ({ width, height, children }) => {
 Sidebar.propTypes = {
   width: PropTypes.number.isRequired,
   height: PropTypes.string.isRequired,
-  children: PropTypes.object.isRequired,
+  children: PropTypes.array.isRequired,
 };
 
 export default Sidebar;

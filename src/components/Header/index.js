@@ -4,6 +4,7 @@ import {
   Switch,
   Route,
   NavLink,
+  Link,
 } from 'react-router-dom';
 import './styles.scss';
 import Sidebar from 'src/components/Sidebar';
@@ -16,21 +17,20 @@ import facebook from 'src/assets/images/facebook.png';
 import contact from 'src/assets/images/contact.png';
 import home from 'src/assets/images/logo-home.png';
 import homeinverted from 'src/assets/images/logo-homeinverted.png';
-
-
+import projet from 'src/assets/images/projet.png';
+import profile from 'src/assets/images/profile.png';
 
 const Header = () => (
   <>
     <Sidebar width={300} height="100%">
-      <Router>
-        <h1 className="menu_title">MENU</h1>
-        <NavLink to="/" className="link"><h2 className="menu_subtitle"><img src={home} className="menu_logo" alt="Accueil" />Home</h2></NavLink>
-        <h2 className="menu_subtitle">Mes Projets</h2>
-        <NavLink to="/" className="link"><h2 className="menu_subtitle"><img src={github} className="menu_logo" alt="Github" />Github</h2></NavLink>
-        <NavLink to="/" className="link"><h2 className="menu_subtitle"><img src={linkedin} className="menu_logo" alt="Linkedin" />LinkedIn</h2></NavLink>
-        <NavLink to="/" className="link"><h2 className="menu_subtitle"><img src={facebook} className="menu_logo" alt="Facebook" />Facebook</h2></NavLink>
-        <NavLink to="/contact" className="link"><h2 className="menu_subtitle"><img src={contact} className="menu_logo" alt="Contact" />Contact</h2></NavLink>
-      </Router>
+      <h1 className="menu_title">MENU</h1>
+      <Link to="/infos" className="link_mob"><h2 className="menu_subtitle"><img src={profile} className="menu_logo" alt="Contact" />A propos de moi</h2></Link>
+      <Link to="/" className="link"><h2 className="menu_subtitle"><img src={home} className="menu_logo" alt="Accueil" />Home</h2></Link>
+      <Link to="/projets" className="link"><h2 className="menu_subtitle"><img src={projet} className="menu_logo" alt="Projets" />Mes Projets</h2></Link>
+      <Link to="/" className="link"><h2 className="menu_subtitle"><img src={github} className="menu_logo" alt="Github" />Github</h2></Link>
+      <Link to="/" className="link"><h2 className="menu_subtitle"><img src={linkedin} className="menu_logo" alt="Linkedin" />LinkedIn</h2></Link>
+      <Link to="/" className="link"><h2 className="menu_subtitle"><img src={facebook} className="menu_logo" alt="Facebook" />Facebook</h2></Link>
+      <Link to="/contact" className="link"><h2 className="menu_subtitle"><img src={contact} className="menu_logo" alt="Contact" />Contact</h2></Link>
 
     </Sidebar>
 

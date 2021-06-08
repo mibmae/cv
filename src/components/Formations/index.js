@@ -77,6 +77,7 @@ const Formation = () => (
       </div>
       <div className="experiences_space" />
     </div>
+
   </div>
 
 );

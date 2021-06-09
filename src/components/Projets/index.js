@@ -11,7 +11,7 @@ const Projets = () => (
       <Left />
       {/*  */}
 
-      <div className="col-8 bordure nopadding">
+      <div className="col-8 bord nopadding">
         <div className="titlea">Projets</div>
         <div className="projets_reas">
           <div className="projets_container">

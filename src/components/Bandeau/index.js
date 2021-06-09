@@ -4,10 +4,10 @@ import './styles.scss';
 
 const Bandeau = () => (
   <div className="bandeau">
-    <div>HTML</div>
-    <div>CSS</div>
-    <div>Javascript</div>
-    <div>React-Redux</div>
+    <div className="lang">HTML</div>
+    <div className="lang2">CSS</div>
+    <div className="lang">Javascript</div>
+    <div className="lang2">React-Redux</div>
   </div>
 
 );

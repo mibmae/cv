@@ -4,7 +4,6 @@
         font-size: 2.5rem;
         justify-content: space-between;
         padding: 2rem;
-        background-color:#084255;
         width:100%;
         background-color: black;
         color: #f6d300;
@@ -18,4 +17,30 @@
                 font-size: 1.3rem;
                 margin-top: 0rem;
             }
+}
+
+.lang {
+    @media screen and (min-width: 800px) {
+    animation: bounce1 0.70s ease-in-out alternate;
+    animation-duration: 1s;
+    animation-iteration-count: 2.5;
+    }
+
+}
+
+.lang2 {
+    @media screen and (min-width: 800px) {
+    animation: bounce2 0.70s ease-in-out infinite alternate;
+    animation-duration: 1s;
+    animation-iteration-count: 2.5;
+    }
+}
+
+@keyframes bounce1 {
+    from {transform: translateX(-20px);}
+    to   {transform: translateX(20px);}
+}
+@keyframes bounce2 {
+    from {transform: translateX(20px);}
+    to   {transform: translateX(-20px);}
 }

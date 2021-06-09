@@ -1,6 +1,22 @@
 .footer {
-    padding: 5rem;
-    background-color: #f6d300;
+    font-family: 'DejaVu Sans Mono';
+        font-size: 1.5rem;
+        justify-content: space-between;
+        padding: 2rem;
+        text-align: center;
+        width:100%;
+        background-color: #f6d300;
+        color: black;
+        @media screen and (max-width: 600px) {
+                // font-size: 1.1rem;
+                // padding: 1.5em 0em;
+                margin-top: -3rem;
+            }
+            @media screen and (max-width: 500px) {
+                width: 100%;
+                font-size: 0.9rem;
+                margin-top: 0rem;
+            }
 }
 
 #SkillBox {

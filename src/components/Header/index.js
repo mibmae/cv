@@ -35,34 +35,16 @@ const Header = () => (
     </Sidebar>
 
     <div className="header">
-      <div className="infos">
-        <div className="infos_name">GUILHEM MOËS</div>
-        <div className="bandeau_head">Développeur Web Javascript FullStack
-        </div>
-        <div className="infos_intro-container">
-          <div className="infos_intro">Je m'appelle Guilhem, passionné d'informatique et de développement Web depuis tout jeune, j'ai décidé d'en faire enfin mon mêtier.</div>
-          <div className="infos_intro_text">"Une passion, bien plus qu'un mêtier !"</div>
-        </div>
-        {/* <div className="summary container-text2">Développeur Web Javascript FullStack
-      </div> */}
+      <div className="infos_name">GUILHEM MOËS</div>
+      <div className="bandeau_head ">Développeur Web Javascript FullStack</div>
+      <div className="infos_intro-container">
+        <div className="infos_intro">Je m'appelle Guilhem, passionné d'informatique et de développement Web depuis tout jeune, j'ai décidé d'en faire enfin mon mêtier.</div>
+        <div className="infos_intro_text">"Une passion, bien plus qu'un mêtier !"</div>
       </div>
-      <div className="header__photo">
-        <img className="img-profil" src={mypic} alt="myPic" />
-      </div>
-
-      {/* <div className="social">
-      <div className="login">
-        <img className="imgreseauFb" src={logoFacebook} alt="Facebook" />
-        guilhem.moes
-      </div>
-      <div className="login">
-        <img className="imgreseauLi" src={logoLink} alt="Facebook" />
-        guilhem-moes
-      </div>
-
-    </div> */}
-
     </div>
+    {/* <div className="header__photo">
+      <img className="img-profil" src={mypic} alt="myPic" />
+    </div> */}
   </>
 );
 

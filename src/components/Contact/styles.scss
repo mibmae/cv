@@ -15,6 +15,22 @@
  
 }
 
+.invalid-feedback {
+    color: red;
+    font-weight: bold;
+    padding: 0.5em;
+    text-align: center;
+    display: block;
+  }
+
+.error {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    color: red;
+    border: 2px solid red;
+}
 
 .contact {
     &_title {
@@ -24,11 +40,51 @@
         padding: 1rem;
     }
     &_form {
+        border-radius: 3%;
+        overflow-y: hidden;
+        margin: 7rem auto;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        padding: 1rem 2rem 1rem 1rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        padding: 1rem;
-        font-size: 1.5rem;
-        text-align: left;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        font-size: large;
+        background-color:black;
+        color: #f6d300;
+        @media screen and (max-width: 800px) {
+            // display: none;
+            margin: 2rem auto;
+            width: 90%;
+           
+         }
+     
+        // display: flex;
+        // padding: 1rem;
+        // font-size: 1.5rem;
+        // text-align: left;
     }
+    
+}
+.texte {
+    font-size: 2rem;
+    font-weight: lighter;
+    width: 102%;
+    color: black;
+}
+
+.button_send {
+    background-color: #f6d300;
+    color: fade-in($color: black, $amount: 1);
+    margin: 0 auto;
 }
   
 @media screen and (max-width: 800px) {

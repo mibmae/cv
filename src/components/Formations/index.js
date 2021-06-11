@@ -11,7 +11,7 @@ const Formation = () => (
       <Left />
       {/*  */}
 
-      <div className="col-8 bordure">
+      <div className="col-9 bordure">
 
         <div className="formation_title">Formation</div>
         <div className="formation_content">

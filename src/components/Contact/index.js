@@ -41,7 +41,7 @@ const Contact = () => {
       <div className="row">
         <Left />
         {/*  */}
-        <div className="col-8 bord nopadding">
+        <div className="col-9 bord nopadding">
           <div className="titlea">Contactez-moi</div>
 
           <form className="contact_form" onSubmit={handleSubmit(handleSubmitForm)}>

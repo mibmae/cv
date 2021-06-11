@@ -47,6 +47,7 @@
     }
     &_container {
         width: fit-content;
+        height: 100%;
     }
 }
 
@@ -147,3 +148,58 @@ figure {
   .cap-bot:before { bottom: 10px; left: 10px; }
   .cap-bot figcaption { left: 10%; bottom: -30%; width: 80%; height: 50%; }
   .cap-bot:hover figcaption { bottom: 50%; }
+
+  .title-cap {
+      background-color: #f6d300;
+      opacity: 0.8;
+    color: black;
+  }
+
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    @media screen and (max-width: 500px) {
+        display: none;
+    }
+      background-color: black;
+      border-radius: 50%;
+  }
+
+    .carousel-indicators {
+      display: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+    list-style: none;
+    color: black;
+  }
+
+  .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    // height: 59vh;
+}
+
+.carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    backface-visibility: hidden;
+    z-index: -9999;
+  }
+
+  .carousel-caption {
+      bottom: 5.25rem;
+  }
+
+  .carousel {
+      margin: 2rem;
+  }

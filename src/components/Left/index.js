@@ -9,7 +9,7 @@ import english from 'src/assets/images/english.png';
 import french from 'src/assets/images/french.png';
 
 const Left = () => (
-  <div className="col-4 bord mob"> <div className="titlea">FOLLOW ME</div>
+  <div className="col-3 bord mob"> <div className="titlea">Follow Me</div>
 
     <div className="row-followme"><img src={logoLink} className="formation_logo" alt="linkedinlogo" /><a href="http://www.linkedIn.com/in/guilhem-moes" target="_blank" rel="noreferrer">LinkedIn</a></div>
     <div className="titlea">Contact</div>

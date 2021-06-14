@@ -8,14 +8,11 @@ import Sidebar from 'src/components/Sidebar';
 
 import github from 'src/assets/images/github.png';
 import linkedin from 'src/assets/images/linkedin.png';
-import facebook from 'src/assets/images/facebook.png';
 import contact from 'src/assets/images/contact.png';
 import home from 'src/assets/images/logo-home.png';
 import projet from 'src/assets/images/projet.png';
 import profile from 'src/assets/images/profile.png';
-import bandeau from 'src/assets/images/bandeau.png';
 import backtotopicon from 'src/assets/images/bouton-haut.png';
-import { element } from 'prop-types';
 
 const backToTop = () => {
   console.log('backtotop');
@@ -25,10 +22,10 @@ const toggle = () => {
   const elements = document.querySelectorAll('.menu_subtitle_actived');
   console.log(elements.length);
   for (let i = 0; i < elements.length; i++) {
-      const current = document.getElementsByClassName('menu_subtitle_actived');
-      console.log("current", current);
-      current[0].classList.remove("menu_subtitle_actived");
-      // this.className += '_actived';
+    const current = document.getElementsByClassName('menu_subtitle_actived');
+    console.log('current', current);
+    current[0].classList.remove('menu_subtitle_actived');
+    // this.className += '_actived';
   }
 };
 

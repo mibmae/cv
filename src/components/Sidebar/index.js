@@ -5,12 +5,31 @@ import PropTypes from 'prop-types';
 const Sidebar = ({ width, height, children }) => {
   const [xPosition, setX] = React.useState(-width);
 
+  const toggleBandeau = () => {
+    const bandeau = document.querySelector('.bandeau');
+    const bordure = document.querySelector('.bordure');
+
+    if (bandeau.style.zIndex === '-1') {
+      setTimeout(() => {
+        bandeau.style.zIndex = 9999;
+      }, 800);
+    }
+    else {
+      setTimeout(() => {
+        bandeau.style.zIndex = -1;
+        bordure.style.zIndex = -2;
+      }, 50);
+    }
+  };
+
   const toggleMenu = () => {
     if (xPosition < 0) {
       setX(0);
+      toggleBandeau();
     }
     else {
       setX(-width);
+      toggleBandeau();
     }
   };
 
@@ -31,7 +50,7 @@ const Sidebar = ({ width, height, children }) => {
           type="button"
           onClick={() => toggleMenu()}
           className="button_menu"
-          
+
         >|||
         </button>
         <div className="content" onClick={() => toggleMenu()}>{children}</div>

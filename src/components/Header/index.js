@@ -15,9 +15,21 @@ import projet from 'src/assets/images/projet.png';
 import profile from 'src/assets/images/profile.png';
 import bandeau from 'src/assets/images/bandeau.png';
 import backtotopicon from 'src/assets/images/bouton-haut.png';
+import { element } from 'prop-types';
 
 const backToTop = () => {
   console.log('backtotop');
+};
+
+const toggle = () => {
+  const elements = document.querySelectorAll('.menu_subtitle_actived');
+  console.log(elements.length);
+  for (let i = 0; i < elements.length; i++) {
+      const current = document.getElementsByClassName('menu_subtitle_actived');
+      console.log("current", current);
+      current[0].classList.remove("menu_subtitle_actived");
+      // this.className += '_actived';
+  }
 };
 
 const Header = () => (
@@ -30,12 +42,61 @@ const Header = () => (
       <div className="bandeau_head ">
         <Sidebar width={300} height="100%">
           <h1 className="menu_title">MENU</h1>
-          <Link to="/infos" className="link_mob"><h2 className="menu_subtitle"><img src={profile} className="menu_logo" alt="Contact" />A propos de moi</h2></Link>
-          <Link to="/" className="link"><h2 className="menu_subtitle"><img src={home} className="menu_logo" alt="Accueil" />Home</h2></Link>
-          <Link to="/projets" className="link"><h2 className="menu_subtitle"><img src={projet} className="menu_logo" alt="Projets" />Mes Projets</h2></Link>
-          <Link to="/" className="link"><h2 className="menu_subtitle"><img src={github} className="menu_logo" alt="Github" />Github</h2></Link>
-          <Link to="/" className="link"><h2 className="menu_subtitle"><img src={linkedin} className="menu_logo" alt="Linkedin" />LinkedIn</h2></Link>
-          <Link to="/contact" className="link"><h2 className="menu_subtitle"><img src={contact} className="menu_logo" alt="Contact" />Contact</h2></Link>
+          <Link
+            to="/infos"
+            className="link_mobile"
+            onClick={(e) => {
+              toggle();
+              e.target.classList.toggle('menu_subtitle_actived');
+            }}
+          ><h2 className="menu_subtitle "><img src={profile} className="menu_logo" alt="Contact" />A propos de moi</h2>
+          </Link>
+          <Link
+            to="/"
+            className="link"
+            onClick={(e) => {
+              toggle();
+              e.target.classList.toggle('menu_subtitle_actived');
+            }}
+          ><h2 className="menu_subtitle"><img src={home} className="menu_logo" alt="Accueil" />Home</h2>
+          </Link>
+          <Link
+            to="/projets"
+            className="link"
+            onClick={(e) => {
+              toggle();
+              e.target.classList.toggle('menu_subtitle_actived');
+            }}
+          ><h2 className="menu_subtitle"><img src={projet} className="menu_logo" alt="Projets" />Mes Projets
+          </h2>
+          </Link>
+          <Link
+            to="/"
+            className="link"
+            onClick={(e) => {
+              toggle();
+              e.target.classList.toggle('menu_subtitle_actived');
+            }}
+          ><h2 className="menu_subtitle"><img src={github} className="menu_logo" alt="Github" />Github</h2>
+          </Link>
+          <Link
+            to="/"
+            className="link"
+            onClick={(e) => {
+              toggle();
+              e.target.classList.toggle('menu_subtitle_actived');
+            }}
+          ><h2 className="menu_subtitle"><img src={linkedin} className="menu_logo" alt="Linkedin" />LinkedIn</h2>
+          </Link>
+          <Link
+            to="/contact"
+            className="link"
+            onClick={(e) => {
+              toggle();
+              e.target.classList.toggle('menu_subtitle_actived');
+            }}
+          ><h2 className="menu_subtitle"><img src={contact} className="menu_logo" alt="Contact" />Contact</h2>
+          </Link>
 
         </Sidebar>Guilhem Moës
         <div className="backtotop"> <a href="#" onClick={backToTop}> <img src={backtotopicon} className="backtotop" alt="Retour en haut de page" /> </a></div>

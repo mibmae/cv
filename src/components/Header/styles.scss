@@ -12,6 +12,12 @@
         width: 100%;
        // padding: 1rem;
     }
+    @media screen and (max-width: 370px) {
+        height: 25vh;
+        margin-left: 0;
+        width: 100%;
+       // padding: 1rem;
+    }
     @media screen and (max-width: 900px) and (orientation: landscape) {
         .bandeau_head {
             display: none;
@@ -148,6 +154,18 @@
     &:hover {
         // display: inline-block;
         // background-image: url("src/assets/images/logo-homeinverted.png");
+        color: black;
+        background-color: #f6d300;
+        border: 0;
+        transform: rotate(360deg) ;
+    }
+    &:active {
+        color: #f6d300;
+        background-color: black;
+        border: 0;
+        transform: rotate(360deg) ;
+    }
+    &_actived {
         color: black;
         background-color: #f6d300;
         border: 0;

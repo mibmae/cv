@@ -97,7 +97,11 @@
     }
     &_space {
         padding: 1rem;
+        &_bottom {
+            margin-bottom: 8rem;
+        }
     }
+
     &_title {
        margin-top: 3rem;
         font-size: 1.7rem;

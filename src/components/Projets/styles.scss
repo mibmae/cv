@@ -167,7 +167,8 @@ figure {
   .carousel {
       @media screen and (max-width: 500px) {
           margin: 2rem;
-          padding: 4rem 0 4rem;
+        //   padding: 4rem 0 4rem;
+        padding: 1rem 0;
       }
   }
 

@@ -75,7 +75,7 @@ const Formation = () => (
         <div className="experiences_summary">- Montage de machine informatique sur mesure</div>
         <div className="experiences_summary">- Réparation de matériel informatique</div>
       </div>
-      <div className="experiences_space" />
+      <div className="experiences_space_bottom" />
     </div>
 
   </div>

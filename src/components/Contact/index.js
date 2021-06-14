@@ -37,7 +37,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="container-fluid">
+    <div className="container-fluid contact">
       <div className="row">
         <Left />
         {/*  */}

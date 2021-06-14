@@ -1,6 +1,7 @@
 import './Sidebar.scss';
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FormControl } from 'react-bootstrap';
 
 const Sidebar = ({ width, height, children }) => {
   const [xPosition, setX] = React.useState(-width);
@@ -15,6 +16,7 @@ const Sidebar = ({ width, height, children }) => {
       }, 800);
     }
     else {
+      console.log(xPosition);
       setTimeout(() => {
         bandeau.style.zIndex = -1;
         bordure.style.zIndex = -2;
@@ -50,8 +52,7 @@ const Sidebar = ({ width, height, children }) => {
           type="button"
           onClick={() => toggleMenu()}
           className="button_menu"
-
-        >|||
+        >{(xPosition < 0) ? '|||' : 'X'}
         </button>
         <div className="content" onClick={() => toggleMenu()}>{children}</div>
       </div>

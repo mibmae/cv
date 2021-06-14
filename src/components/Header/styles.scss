@@ -5,10 +5,9 @@
     display: flex;
     flex-direction: column;
     // border-bottom: 10px solid black;
-    height: 33vh;
     //box-shadow: 10px 5px 5px rgb(153, 149, 149);
     @media screen and (max-width: 500px) {
-        height: 39vh;
+        height: 20vh;
         margin-left: 0;
         width: 100%;
        // padding: 1rem;
@@ -26,15 +25,29 @@
     }
     }
 
+    .backtotop {
+        position: fixed;
+        height: 48px;
+        width: 48px;
+        background-color: black;
+        color:#f6d300;
+        border-radius: 50%;
+        border: 1px solid #f6d300;
+        bottom: 83px;
+        right: 10px;
+        font-size: 5rem;
+    }
+
     @media screen and (min-width: 800px) and (max-width: 5000px) {
-        height: 35vh;
+        height: 26vh;
         background-color: #f6d300;
         .bandeau_head {
             margin: 0 auto;
             text-align: center;
         }
         .infos_intro {
-            margin: 2rem;
+            // margin: 2rem;
+            margin: 12rem 26rem 3rem;
             font-size: 1.6rem;
         }
     }
@@ -71,6 +84,21 @@
     
 }
 
+
+.bandeaux {
+    position: sticky;
+    top: 20px;
+   
+      width: 346px;
+      left:99rem;
+      top:10rem;
+      right:0;
+      border:7px solid yellow;
+      border-radius: 2rem;
+      background-color: black;
+      transform: rotate(45deg);
+    
+}
 
 .name {
     font-family: 'DejaVu Sans Mono';
@@ -129,7 +157,7 @@
 .menu_title {
     font-family: DejaVu Sans Mono;
     background-color: black;
-    height: 50px;
+    height: 57px;
     color: white;
     margin: 0rem;
     padding: 0.6rem;
@@ -221,9 +249,9 @@
         font-size: 1.1rem;
         }
         @media screen and (max-width: 540px) {
-            width: 97%;
+            width: 100%;
             text-align: center;
-         
+            margin: 8rem 0 0 0;
         }
         &_text {
             @media screen and (max-width: 1201px) {
@@ -408,7 +436,8 @@
     font-size: 2.5rem;
     justify-content: space-between;
     padding: 2rem;
-    width:60%;
+    width:100%;
+    position: fixed;
     background-color: black;
     color: #f6d300;
     margin: -2rem 0rem 1rem 13rem;
@@ -422,11 +451,11 @@
             // font-size: 1.1rem;
             // padding: 1.5em 0em;
             width: 100%;
-            margin-top: -3rem;
+            // margin-top: -3rem;
         }
         @media screen and (max-width: 500px) {
             width: 100%;
-            font-size: 1.4rem;
+            // font-size: 1.4rem;
         
         }
 }

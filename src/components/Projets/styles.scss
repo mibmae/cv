@@ -1,6 +1,11 @@
 .container-fluid { 
     height: 100%;
     width: 100%;
+    @media screen and (max-width: 500px) {
+       height: 64.6vh;
+       
+     }
+ 
 }
 
 .col {
@@ -48,7 +53,11 @@
     &_container {
         width: fit-content;
         height: 100%;
+        @media screen and (max-width: 500px) {
+            margin-top: 1rem;
+        }
     }
+    
 }
 
 .link {
@@ -153,6 +162,13 @@ figure {
       background-color: #f6d300;
       opacity: 0.8;
     color: black;
+  }
+
+  .carousel {
+      @media screen and (max-width: 500px) {
+          margin: 2rem;
+          padding: 4rem 0 4rem;
+      }
   }
 
   .carousel-control-next-icon, .carousel-control-prev-icon {

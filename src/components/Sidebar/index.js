@@ -31,9 +31,7 @@ const Sidebar = ({ width, height, children }) => {
           type="button"
           onClick={() => toggleMenu()}
           className="button_menu"
-          style={{
-            transform: `translate(${width}px, 30px)`,
-          }}
+          
         >|||
         </button>
         <div className="content" onClick={() => toggleMenu()}>{children}</div>

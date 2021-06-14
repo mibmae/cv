@@ -10,11 +10,15 @@
         @media screen and (max-width: 600px) {
                 // font-size: 1.1rem;
                 // padding: 1.5em 0em;
+                position: sticky;
                 margin-top: -3rem;
+                bottom: 0;
             }
             @media screen and (max-width: 500px) {
                 width: 100%;
                 font-size: 0.9rem;
                 margin-top: 0rem;
+                position: sticky;
+                bottom: 0;
             }
 }

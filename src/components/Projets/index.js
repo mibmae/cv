@@ -47,7 +47,7 @@ const Projets = () => (
       </div>
     </div>
   </div>
-
+ 
 );
 
 export default Projets;

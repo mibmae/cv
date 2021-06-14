@@ -9,6 +9,8 @@
     background-color: rgb(255, 255, 255);
     transition: 0.8s ease;
     background-color:#f6d300;
+    left: 0;
+    z-index: 9999;
 }
 
 .toggle-menu {
@@ -41,10 +43,14 @@
 
 
 .button_menu {
+    @media screen and (max-width: 500px) {
+        margin-left: 0;
+        transform: translate(300px, -32.5px);
+    }
     border: 0;
-    height: 50px;
+    height: 48px;
     border-top-right-radius: 10rem;
-    margin-top: 1rem;
+    margin-top: 1.7rem;
     border-bottom-right-radius: 9rem;
     width: 60px;
     position: absolute;
@@ -55,11 +61,11 @@
     border-left: 0;
     color: #f6d300;
     margin-left: 0;
+    transform: translate(300px, -32.5px);
+
 }
 
-.content {
-    margin-top: 4rem;
-}
+
 @media screen and (max-width: 800px) {
     .link_mob {
         display:block;

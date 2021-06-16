@@ -12,33 +12,78 @@ import Bandeau from 'src/components/Bandeau';
 import Projets from 'src/components/Projets';
 import Contact from 'src/components/Contact';
 import Infos from 'src/components/Infos';
-import { Widget, addResponseMessage } from 'react-chat-widget';
+import {
+  Widget, addResponseMessage, addLinkSnippet, setQuickButtons, addUserMessage,
+} from 'react-chat-widget';
 import 'react-chat-widget/lib/styles.css';
 import socket from 'src/socketio';
 
 // == Composant
 function App() {
-
-
   socket.emit('connection');
 
   socket.on('private_message', (res) => {
-    addResponseMessage(res);
+    if (res === "Voici l'adresse de mon repo Github : http://github.com/mibmae") {
+      // res = 'Voici l adresse de mon repo Github : <a href="http://www.google.fr"> Github </a>';
+      addLinkSnippet(
+        {
+          title: "Voici l'adresse de mon repo Github",
+          link: 'https://github.com/mibmae',
+          target: '_blank',
+        },
+      );
+    }
+    else {
+      addResponseMessage(res);
+    }
   });
 
-
-  useEffect(() => {
-    socket.on('private message', (msg) => {
-      addResponseMessage(msg);
-    }, []);
-  });
+  setQuickButtons(
+    [{
+      label: 'Disponibilité',
+      value: 'Disponibilité',
+    },
+    {
+      label: 'Mail',
+      value: 'Mail',
+    },
+    {
+      label: 'Github',
+      value: 'Github',
+    },
+    {
+      label: 'Telephone',
+      value: 'Téléphone',
+    },
+  ]);
 
   // useEffect(() => {
-  //   socket.on('news', (res) => addResponseMessage(res));
-  //   // addResponseMessage('Laissez moi un message, je vous répondrai le plus vite possible.');
-  // }, []);
+  //   socket.on('private message', (msg) => {
+  //     addResponseMessage(msg);
+  //   }, []);
+  // });
+
+
+  const handleQuickButtonClicked = (button) => {
+    console.log(button);
+    addUserMessage(button);
+    socket.emit('client_message', button);
+    
+  }
 
   const handleNewUserMessage = (newMessage) => {
+    if (newMessage === 'message') {
+    //   // toggleWidget();
+    //   setQuickButtons(
+    //     [{
+    //       label: 'Je voudrai savoir si vous êtes disponible ?',
+    //       value: 'Je voudrai savoir si vous êtes disponible ?',
+    //     },
+    //     {
+    //       label: 'Je voudrai savoir si vous êtes disponible ?',
+    //       value: 'Je voudrai savoir si vous êtes disponible ?',
+    //     }])
+    }
     // socket.on('message', newMessage);
     //  addResponseMessage(newMessage);
 
@@ -56,6 +101,7 @@ function App() {
         title="Me contacter"
         subtitle="C'est par ici !"
         senderPlaceHolder="Veuillez entrer un message"
+        handleQuickButtonClicked={handleQuickButtonClicked}
       />
       <Header />
       <Bandeau />

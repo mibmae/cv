@@ -1,3 +1,3 @@
-const socket = window.io('http://localhost:3001/');
+const socket = window.io('https://server-mibmae.herokuapp.com/');
 
 export default socket;

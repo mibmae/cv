@@ -59,12 +59,15 @@
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-bootstrap": "^1.6.1",
+    "react-chat-widget": "^3.0.5",
     "react-dom": "^17.0.1",
     "react-hook-form": "^7.8.3",
     "react-redux": "^7.2.4",
     "react-router-dom": "^5.2.0",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^2.0.3",
+    "socket.io": "^4.1.2",
+    "socketio": "^1.0.0",
     "surge": "^0.23.0"
   }
 }

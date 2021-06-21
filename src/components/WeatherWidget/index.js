@@ -7,7 +7,6 @@ function WeatherWidget({ city }) {
   const [desc, setDesc] = useState('');
   const [temperature, setTemperature] = useState('');
   const [icon, setIcon] = useState('');
-  
   // au 1e rendu du composant je veux charger les données météo
   // pour la ville passée en props
   useEffect(() => {
@@ -20,8 +19,9 @@ function WeatherWidget({ city }) {
         console.log(icon, data.weather[0].icon);
         setTemperature(Math.round(data.main.temp));
         setDesc(data.weather[0].description);
-      } catch (error) {
-        console.log(`error`, error);
+      }
+      catch (error) {
+        console.log('error', error);
       }
     };
 

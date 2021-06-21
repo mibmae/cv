@@ -20,10 +20,8 @@ const backToTop = () => {
 
 const toggle = () => {
   const elements = document.querySelectorAll('.menu_subtitle_actived');
-  console.log(elements.length);
   for (let i = 0; i < elements.length; i++) {
     const current = document.getElementsByClassName('menu_subtitle_actived');
-    console.log('current', current);
     current[0].classList.remove('menu_subtitle_actived');
     // this.className += '_actived';
   }
@@ -64,8 +62,7 @@ const Header = () => (
               toggle();
               e.target.classList.toggle('menu_subtitle_actived');
             }}
-          ><h2 className="menu_subtitle"><img src={projet} className="menu_logo" alt="Projets" />Mes Projets
-          </h2>
+          ><h2 className="menu_subtitle"><img src={projet} className="menu_logo" alt="Projets" />Mes Projets</h2>
           </Link>
           <Link
             to="/"

@@ -1,12 +1,12 @@
 // == Import npm
-import React, { useEffect } from 'react';
+import React from 'react';
 
 // == Import
 import Header from 'src/components/Header';
 import Formations from 'src/components/Formations';
 import Footer from 'src/components/Footer';
 import './styles.css';
-import WeatherWidget from 'src/components/WeatherWidget';
+// import WeatherWidget from 'src/components/WeatherWidget';
 import { Switch, Route } from 'react-router-dom';
 import Bandeau from 'src/components/Bandeau';
 import Projets from 'src/components/Projets';
@@ -50,6 +50,14 @@ function App() {
     {
       label: 'Mail',
       value: 'Mail',
+    },
+    {
+      label: 'Github',
+      value: 'Github',
+    },
+    {
+      label: 'Telephone',
+      value: 'Téléphone',
     },
     {
       label: 'Github',

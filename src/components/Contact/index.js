@@ -20,7 +20,7 @@ const Contact = () => {
 
   const required = 'Ce champ est requis.';
   const errorMessage = (error) => (
-    <div className="invalid-feedback">{error}</div>
+    <div className="invalid-contact">{error}</div>
   );
 
   const handleChangeName = (event) => {

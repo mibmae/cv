@@ -13,7 +13,11 @@ import Projets from 'src/components/Projets';
 import Contact from 'src/components/Contact';
 import Infos from 'src/components/Infos';
 import {
-  Widget, addResponseMessage, addLinkSnippet, setQuickButtons, addUserMessage,
+  Widget,
+  addResponseMessage,
+  addLinkSnippet,
+  setQuickButtons,
+  addUserMessage,
 } from 'react-chat-widget';
 import 'react-chat-widget/lib/styles.css';
 import socket from 'src/socketio';
@@ -23,7 +27,7 @@ function App() {
   socket.emit('connection');
 
   socket.on('private_message', (res) => {
-    if (res === "Voici l'adresse de mon repo Github : http://github.com/mibmae") {
+    if (res === "Voici l'adresse de mon repo Github : http://github.com/mibmae.") {
       // res = 'Voici l adresse de mon repo Github : <a href="http://www.google.fr"> Github </a>';
       addLinkSnippet(
         {
@@ -55,7 +59,8 @@ function App() {
       label: 'Telephone',
       value: 'Téléphone',
     },
-  ]);
+    ],
+  );
 
   // useEffect(() => {
   //   socket.on('private message', (msg) => {
@@ -63,13 +68,10 @@ function App() {
   //   }, []);
   // });
 
-
   const handleQuickButtonClicked = (button) => {
-    console.log(button);
     addUserMessage(button);
     socket.emit('client_message', button);
-    
-  }
+  };
 
   const handleNewUserMessage = (newMessage) => {
     if (newMessage === 'message') {
@@ -93,16 +95,11 @@ function App() {
     // Now send the message throught the backend API
   };
 
+  // eslint-disable-next-line max-len
+
   return (
     <div className="app">
-      <Widget
-        handleNewUserMessage={handleNewUserMessage}
-        // profileAvatar={logo}
-        title="Me contacter"
-        subtitle="C'est par ici !"
-        senderPlaceHolder="Veuillez entrer un message"
-        handleQuickButtonClicked={handleQuickButtonClicked}
-      />
+
       <Header />
       <Bandeau />
       {/* <WeatherWidget city="Saint-ambroix" /> */}
@@ -121,7 +118,14 @@ function App() {
         </Route>
       </Switch>
       {/* <WeatherWidget city="Saint-Ambroix" /> */}
-
+      <Widget
+        handleNewUserMessage={handleNewUserMessage}
+        // profileAvatar={logo}
+        title="Me contacter"
+        subtitle="C'est par ici !"
+        senderPlaceHolder="Veuillez entrer un message"
+        handleQuickButtonClicked={handleQuickButtonClicked}
+      />
       <Footer />
     </div>
   );

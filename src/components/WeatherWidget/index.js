@@ -15,8 +15,9 @@ function WeatherWidget({ city }) {
       const apiKey = 'e957c727743a6de50f5fab1fccce6b61';
 
       try {
-        const { data } = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&lang=fr&appid=${apiKey}`);
+        const { data } = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&lang=fr&appid=${apiKey}`);
         setIcon(data.weather[0].icon);
+        console.log(icon, data.weather[0].icon);
         setTemperature(Math.round(data.main.temp));
         setDesc(data.weather[0].description);
       } catch (error) {
@@ -31,11 +32,11 @@ function WeatherWidget({ city }) {
     <div className="weather-widget">
       <div className="weather-widget__left-col">
         <p className="weather-widget__city">{city}</p>
-        <p className="weather-widget__desc">{desc}</p>
       </div>
       <div className="weather-widget__right-col">
         <p className="weather-widget__temperature">{temperature} °C</p>
-        <img className="weather-widget__icon" src={`http://openweathermap.org/img/wn/${icon}@2x.png`} alt="Weather Icon"/>
+        <img className="weather-widget__icon" src={`https://openweathermap.org/img/wn/${icon}@2x.png`} alt="Weather Icon" />
+        <p className="weather-widget__desc">{desc}</p>
       </div>
     </div>
   );

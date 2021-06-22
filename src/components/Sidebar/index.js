@@ -1,6 +1,8 @@
 import './Sidebar.scss';
 import React from 'react';
 import PropTypes from 'prop-types';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Sidebar = ({ width, height, children }) => {
   const [xPosition, setX] = React.useState(-width);
@@ -37,6 +39,7 @@ const Sidebar = ({ width, height, children }) => {
   React.useEffect(() => {
     setX(-300);
   }, []);
+
   return (
     <>
       <div
@@ -51,7 +54,7 @@ const Sidebar = ({ width, height, children }) => {
           type="button"
           onClick={() => toggleMenu()}
           className="button_menu"
-        >{(xPosition < 0) ? '|||' : 'X'}
+        >{(xPosition < 0) ? <FontAwesomeIcon icon={faBars} transform="down-2" size="lg" /> : <FontAwesomeIcon icon={faTimes} transform="down-2" size="lg" />}
         </button>
         <div className="content" onClick={() => toggleMenu()}>{children}</div>
       </div>

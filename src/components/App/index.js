@@ -56,15 +56,7 @@ function App() {
       value: 'Github',
     },
     {
-      label: 'Telephone',
-      value: 'Téléphone',
-    },
-    {
-      label: 'Github',
-      value: 'Github',
-    },
-    {
-      label: 'Telephone',
+      label: 'Téléphone',
       value: 'Téléphone',
     },
     ],

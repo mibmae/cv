@@ -20,7 +20,9 @@ const Sidebar = ({ width, height, children }) => {
       console.log(xPosition);
       setTimeout(() => {
         bandeau.style.zIndex = -1;
-        bordure.style.zIndex = -2;
+        if (bordure != null) {
+          bordure.style.zIndex = -2;
+        }
       }, 50);
     }
   };

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Left from 'src/components/Left';
 import './styles.scss';
 import { useForm } from 'react-hook-form';
+import axios from 'axios';
 
 const Contact = () => {
   const {
@@ -10,12 +11,21 @@ const Contact = () => {
     formState: { errors },
   } = useForm();
   const [message, setMessage] = useState('');
-  const [name, setName] = useState('');
+  const [firstname, setName] = useState('');
   const [mail, setMail] = useState('');
 
   const handleSubmitForm = (data, event) => {
-    console.log('envois la sauce', data.name, data.email, data.message);
     event.preventDefault();
+    console.log(data);
+    axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
+    axios.post('http://server-mibmae.herokuapp.com/mail/', data)
+      .then((reponse) => {
+        console.log(reponse);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+    // console.log('envois la sauce', data.name, data.email, data.message);
   };
 
   const required = 'Ce champ est requis.';
@@ -45,19 +55,19 @@ const Contact = () => {
           <div className="titlea">Contactez-moi</div>
 
           <form className="contact_form" onSubmit={handleSubmit(handleSubmitForm)}>
-            <label htmlFor="name">
+            <label htmlFor="firstname">
               Votre Nom:
               <input
                 className="texte"
-                name="name"
-                id="name"
+                name="firstname"
+                id="firstname"
                 type="text"
                 onChange={handleChangeName}
-                {...register('name', { required: 'Veuillez entrer votre nom' })}
+                {...register('firstname', { required: 'Veuillez entrer votre nom' })}
               />
             </label>
-            {errors.name && errorMessage('Veuillez entrer votre nom')}
-            
+            {errors.firstname && errorMessage('Veuillez entrer votre nom')}
+
             <label htmlFor="mail">
               Votre Mail:
               <input
@@ -81,7 +91,7 @@ const Contact = () => {
               {errors.message && errorMessage('Veuillez entrer un message')}
             </label>
             <input type="submit" className="button_send" value="Envoyer" />
-            <p>{name}</p>
+            <p>{firstname}</p>
             <p>{mail}</p>
             <p>{message}</p>
           </form>

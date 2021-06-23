@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+/* eslint-disable no-console */
+import React, { useState } from 'react';
 import Left from 'src/components/Left';
 import './styles.scss';
 import { useForm } from 'react-hook-form';
@@ -18,7 +19,7 @@ const Contact = () => {
     event.preventDefault();
     console.log(data);
     axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
-    axios.post('http://server-mibmae.herokuapp.com/mail/', data)
+    axios.post('https://server-mibmae.herokuapp.com/mail/', data)
       .then((reponse) => {
         console.log(reponse);
       })
@@ -28,7 +29,6 @@ const Contact = () => {
     // console.log('envois la sauce', data.name, data.email, data.message);
   };
 
-  const required = 'Ce champ est requis.';
   const errorMessage = (error) => (
     <div className="invalid-contact">{error}</div>
   );

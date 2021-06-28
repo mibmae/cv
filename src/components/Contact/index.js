@@ -15,7 +15,6 @@ const Contact = () => {
   const [firstname, setName] = useState('');
   const [mail, setMail] = useState('');
 
-
   const handleSubmitForm = (data, event) => {
     event.preventDefault();
     console.log(data);

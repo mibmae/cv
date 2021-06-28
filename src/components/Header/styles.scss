@@ -39,9 +39,15 @@
         color:#f6d300;
         border-radius: 50%;
         border: 1px solid #f6d300;
-        bottom: 83px;
+        top: 8px;
         right: 10px;
         font-size: 5rem;
+    }
+
+    @media screen and (max-width: 800px) {
+        .backtotop {
+
+        }
     }
 
     @media screen and (min-width: 800px) and (max-width: 5000px) {

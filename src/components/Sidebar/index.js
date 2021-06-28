@@ -10,10 +10,12 @@ const Sidebar = ({ width, height, children }) => {
   const toggleBandeau = () => {
     const bandeau = document.querySelector('.bandeau');
     const bordure = document.querySelector('.bordure');
+    const chat = document.querySelector('.rcw-widget-container');
 
     if (bandeau.style.zIndex === '-1') {
       setTimeout(() => {
         bandeau.style.zIndex = 9999;
+        chat.style.zIndex = 9999;
       }, 800);
     }
     else {
@@ -24,6 +26,9 @@ const Sidebar = ({ width, height, children }) => {
           bordure.style.zIndex = -2;
         }
       }, 50);
+      setTimeout(() => {
+        chat.style.zIndex = -1;
+      }, 5);
     }
   };
 

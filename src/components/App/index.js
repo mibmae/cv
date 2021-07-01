@@ -37,6 +37,16 @@ function App() {
         },
       );
     }
+    if (res === "Mon adresse mail est : mibmae@gmail.com.") {
+      // res = 'Voici l adresse de mon repo Github : <a href="http://www.google.fr"> Github </a>';
+      addLinkSnippet(
+        {
+          title: "Cliquez ici pour m'envoyer un message",
+          link: 'https://www.guilhem-moes.xyz/contact',
+          target: '_self',
+        },
+      );
+    }
     else {
       addResponseMessage(res);
     }

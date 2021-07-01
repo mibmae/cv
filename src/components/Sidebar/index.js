@@ -15,7 +15,9 @@ const Sidebar = ({ width, height, children }) => {
     if (bandeau.style.zIndex === '-1') {
       setTimeout(() => {
         bandeau.style.zIndex = 9999;
+        if (chat !== null) {
         chat.style.zIndex = 9999;
+        }
       }, 800);
     }
     else {
@@ -26,9 +28,12 @@ const Sidebar = ({ width, height, children }) => {
           bordure.style.zIndex = -2;
         }
       }, 50);
+      console.log(chat);
+      if (chat !== null) {
       setTimeout(() => {
         chat.style.zIndex = -1;
       }, 5);
+    }
     }
   };
 

@@ -14,7 +14,7 @@ const Left = () => (
     <div className="row-followme"><img src={logoLink} className="formation_logo" alt="linkedinlogo" /><a href="http://www.linkedIn.com/in/guilhem-moes" target="_blank" rel="noreferrer">LinkedIn</a></div>
     <div className="titlea">Contact</div>
     <div className="contact_container">
-      <div className="row-contact"><img src={tel} className="row-contact_logo" alt="linkedinlogo" />06 22 99 70 83</div>
+      <div className="row-contact"><img src={tel} className="row-contact_logo" alt="linkedinlogo" /><a href="tel:+33622997083">06 22 99 70 83</a></div>
       <div className="row-contact"><img src={mail} className="row-contact_logo" alt="linkedinlogo" />guilhem.moes@gmail.com</div>
       <div className="row-contact"><img src={location} className="row-contact_logo" alt="linkedinlogo" />9 rue de la boucherie 30500 Saint-Ambroix</div>
     </div>

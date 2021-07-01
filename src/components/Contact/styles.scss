@@ -86,10 +86,12 @@
     background-color: #f6d300;
     color: fade-in($color: black, $amount: 1);
     margin: 0 auto;
+    border-radius: 2rem;
 }
   
 @media screen and (max-width: 800px) {
     .mob {
         display:none;
     }
+
 }

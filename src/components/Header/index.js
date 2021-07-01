@@ -64,24 +64,28 @@ const Header = () => (
             }}
           ><h2 className="menu_subtitle"><img src={projet} className="menu_logo" alt="Projets" />Mes Projets</h2>
           </Link>
-          <Link
-            to="/"
+          <a
+            href="https://github.com/mibmae"
+            target="_blank"
             className="link"
             onClick={(e) => {
               toggle();
               e.target.classList.toggle('menu_subtitle_actived');
             }}
+            rel="noreferrer"
           ><h2 className="menu_subtitle"><img src={github} className="menu_logo" alt="Github" />Github</h2>
-          </Link>
-          <Link
-            to="/"
+          </a>
+          <a
+            href="https://www.linkedin.com/in/guilhem-moes/"
+            target="_blank"
             className="link"
             onClick={(e) => {
               toggle();
               e.target.classList.toggle('menu_subtitle_actived');
             }}
+            rel="noreferrer"
           ><h2 className="menu_subtitle"><img src={linkedin} className="menu_logo" alt="Linkedin" />LinkedIn</h2>
-          </Link>
+          </a>
           <Link
             to="/contact"
             className="link"

@@ -30,15 +30,6 @@ function App() {
   socket.emit('connection');
 
   socket.on('private_message', (res) => {
-    if (res === 'Voici l\'adresse de mon repo Github : http://github.com/mibmae.') {
-      addLinkSnippet(
-        {
-          title: "Voici l'adresse de mon repo Github",
-          link: 'https://github.com/mibmae',
-          target: '_blank',
-        },
-      );
-    }
     if (res === 'Mon adresse mail est : mibmae@gmail.com.') {
       addLinkSnippet(
         {
@@ -75,11 +66,35 @@ function App() {
 
   const handleQuickButtonClicked = (button) => {
     addUserMessage(button);
-    socket.emit('client_message', button);
+    if (button === 'Github') {
+      addLinkSnippet(
+        {
+          title: "Voici l'adresse de mon repo Github",
+          link: 'https://github.com/mibmae',
+          target: '_blank',
+        },
+      );
+    }
+    else {
+      socket.emit('client_message', button);
+    }
   };
 
   const handleNewUserMessage = (newMessage) => {
-    socket.emit('client_message', newMessage);
+    const newMessages = newMessage.toLowerCase();
+    console.log(newMessages);
+    if (newMessages === 'github') {
+      addLinkSnippet(
+        {
+          title: "Voici l'adresse de mon repo Githubs",
+          link: 'https://github.com/mibmae',
+          target: '_blank',
+        },
+      );
+    }
+    else {
+      socket.emit('client_message', newMessage);
+    }
   };
 
   return (
@@ -135,10 +150,10 @@ function App() {
         cookieName="myAwesomeCookieName2"
         style={{ background: '#2B373B' }}
         buttonClasses="buttoncookie"
-        
+
         expires={150}
       >
-        <img src={cookie} alt="cookie" style={{width: '2%'}} /> Ici on mange des cookies{' '}
+        <img src={cookie} alt="cookie" style={{ width: '2%' }} /> Ici on mange des cookies{' '}
         <span style={{ fontSize: '10px' }}>Cela te convient ? </span>
       </CookieConsent>
     </div>

@@ -19,12 +19,16 @@ const Contact = () => {
   const [email, setMail] = useState('');
   const [status, setStatus] = useState('');
 
+
   const handleSubmitForm = (data, event) => {
     event.preventDefault();
+    const form = document.getElementById('contact_form');
+    console.log(form);
     sendForm('service_4htvcoq', 'template_w5w7mkj', '#contact_form')
       .then((response) => {
         if (response.status === 200) {
           setStatus('Le message a bien été envoyé');
+          form.reset();
         }
         else {
           setStatus('Il y a un problème veuillez réessayer !');
@@ -104,7 +108,9 @@ const Contact = () => {
               {errors.message && errorMessage('Veuillez entrer un message')}
             </label>
             <input type="submit" className="button_send" value="Envoyer" />
+            <p>{status}</p>
           </form>
+          
         </div>
       </div>
     </div>

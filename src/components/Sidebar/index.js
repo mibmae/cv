@@ -21,14 +21,12 @@ const Sidebar = ({ width, height, children }) => {
       }, 800);
     }
     else {
-      console.log(xPosition);
       setTimeout(() => {
         bandeau.style.zIndex = -1;
         if (bordure != null) {
           bordure.style.zIndex = -2;
         }
       }, 50);
-      console.log(chat);
       if (chat !== null) {
       setTimeout(() => {
         chat.style.zIndex = -1;

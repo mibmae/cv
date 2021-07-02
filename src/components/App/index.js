@@ -21,14 +21,16 @@ import {
 } from 'react-chat-widget';
 import 'react-chat-widget/lib/styles.css';
 import socket from 'src/socketio';
+import robot from 'src/assets/images/robot.png';
+import cookie from 'src/assets/images/cookies.png';
+import CookieConsent, { Cookies } from 'react-cookie-consent';
 
 // == Composant
 function App() {
   socket.emit('connection');
 
   socket.on('private_message', (res) => {
-    if (res === "Voici l'adresse de mon repo Github : http://github.com/mibmae.") {
-      // res = 'Voici l adresse de mon repo Github : <a href="http://www.google.fr"> Github </a>';
+    if (res === 'Voici l\'adresse de mon repo Github : http://github.com/mibmae.') {
       addLinkSnippet(
         {
           title: "Voici l'adresse de mon repo Github",
@@ -37,8 +39,7 @@ function App() {
         },
       );
     }
-    if (res === "Mon adresse mail est : mibmae@gmail.com.") {
-      // res = 'Voici l adresse de mon repo Github : <a href="http://www.google.fr"> Github </a>';
+    if (res === 'Mon adresse mail est : mibmae@gmail.com.') {
       addLinkSnippet(
         {
           title: "Cliquez ici pour m'envoyer un message",
@@ -72,40 +73,14 @@ function App() {
     ],
   );
 
-  // useEffect(() => {
-  //   socket.on('private message', (msg) => {
-  //     addResponseMessage(msg);
-  //   }, []);
-  // });
-
   const handleQuickButtonClicked = (button) => {
     addUserMessage(button);
     socket.emit('client_message', button);
   };
 
   const handleNewUserMessage = (newMessage) => {
-    if (newMessage === 'message') {
-    //   // toggleWidget();
-    //   setQuickButtons(
-    //     [{
-    //       label: 'Je voudrai savoir si vous êtes disponible ?',
-    //       value: 'Je voudrai savoir si vous êtes disponible ?',
-    //     },
-    //     {
-    //       label: 'Je voudrai savoir si vous êtes disponible ?',
-    //       value: 'Je voudrai savoir si vous êtes disponible ?',
-    //     }])
-    }
-    // socket.on('message', newMessage);
-    //  addResponseMessage(newMessage);
-
-    // console.log(`New message incoming! ${newMessage}`);
-    // socket.emit('sendmessage', newMessage);
     socket.emit('client_message', newMessage);
-    // Now send the message throught the backend API
   };
-
-  // eslint-disable-next-line max-len
 
   return (
     <div className="app">
@@ -116,27 +91,56 @@ function App() {
       <Switch>
         <Route path="/" exact>
           <Formations />
+          <Widget
+            handleNewUserMessage={handleNewUserMessage}
+            profileAvatar={robot}
+            title="Me contacter"
+            subtitle="C'est par ici !"
+            senderPlaceHolder="Veuillez entrer un message"
+            handleQuickButtonClicked={handleQuickButtonClicked}
+          />
         </Route>
         <Route path="/projets" exact>
           <Projets />
+          <Widget
+            handleNewUserMessage={handleNewUserMessage}
+        // profileAvatar={logo}
+            title="Me contacter"
+            subtitle="C'est par ici !"
+            senderPlaceHolder="Veuillez entrer un message"
+            handleQuickButtonClicked={handleQuickButtonClicked}
+          />
         </Route>
         <Route path="/contact" exact>
           <Contact />
         </Route>
         <Route path="/infos" exact>
           <Infos />
+          <Widget
+            handleNewUserMessage={handleNewUserMessage}
+        // profileAvatar={logo}
+            title="Me contacter"
+            subtitle="C'est par ici !"
+            senderPlaceHolder="Veuillez entrer un message"
+            handleQuickButtonClicked={handleQuickButtonClicked}
+          />
         </Route>
       </Switch>
       {/* <WeatherWidget city="Saint-Ambroix" /> */}
-      <Widget
-        handleNewUserMessage={handleNewUserMessage}
-        // profileAvatar={logo}
-        title="Me contacter"
-        subtitle="C'est par ici !"
-        senderPlaceHolder="Veuillez entrer un message"
-        handleQuickButtonClicked={handleQuickButtonClicked}
-      />
+
       <Footer />
+      <CookieConsent
+        location="bottom"
+        buttonText="Miam"
+        cookieName="myAwesomeCookieName2"
+        style={{ background: '#2B373B' }}
+        buttonClasses="buttoncookie"
+        
+        expires={150}
+      >
+        <img src={cookie} alt="cookie" style={{width: '2%'}} /> Ici on mange des cookies{' '}
+        <span style={{ fontSize: '10px' }}>Cela te convient ? </span>
+      </CookieConsent>
     </div>
   );
 }

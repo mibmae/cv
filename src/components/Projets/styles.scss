@@ -174,15 +174,46 @@ figure {
       }
   }
 
-  .carousel-control-next-icon, .carousel-control-prev-icon {
-    @media screen and (max-width: 500px) {
-        display: none;
-    }
-      background-color: black;
-      border-radius: 50%;
-  }
+//   .carousel-control-next-icon, .carousel-control-prev-icon {
+//     @media screen and (max-width: 500px) {
+//         display: none;
+//     }
+//       background-color: black;
+//       border-radius: 50%;
+//   }
 
-    .carousel-indicators {
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 40px;
+  width: 40px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+  background-color: #f6d300;
+  :hover {
+    background-color: black;
+}
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 27px;
+  margin:1.28rem;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 27px;
+  margin:1rem;
+  color: red;
+ 
+}
+
+.carousel-indicators {
       display: none;
     position: absolute;
     right: 0;

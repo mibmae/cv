@@ -13,8 +13,15 @@ body {
 
 a:hover {
   color:coral;
-  text-decoration: none;
+  text-decoration: wavy;
   
+}
+a:visited {
+  
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
 }
 
 a {
@@ -76,6 +83,7 @@ a {
     width: 100%;
     height: 7rem;
   }
+
 }
 //   .active {
 //     display: none;

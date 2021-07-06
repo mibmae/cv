@@ -1,0 +1,33 @@
+.loaderi  {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    display: block;
+    left: 0;
+    z-index: 1000;
+    -webkit-animation: fadeInThenOut 4s linear forwards;
+    animation: fadeInThenOut 4s linear forwards;
+}
+
+.loaderb {
+    width: 100%;
+    height: 100vh;
+
+}
+
+    @keyframes fadeInThenOut{
+        0%{opacity:1; z-index:9999}
+        25%{opacity:1; z-index:9999}
+        50%{opacity:0.8; z-index:9999}
+        75%{opacity:0.6; z-index:9999}
+        to{opacity:0; z-index: -9999;}}
+    
+    @keyframes fadeOut{
+            0%{opacity:1}
+            50%{opacity:0.8}
+            to{opacity:0; z-index: -9999;}
+    }
+            
+    
+    

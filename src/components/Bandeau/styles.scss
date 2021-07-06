@@ -1,15 +1,18 @@
+
+
+
 .bandeau {
         font-family: 'DejaVu Sans Mono';
         display: flex;
         font-size: 2.5rem;
         justify-content: space-between;
-        padding: 2rem;
+        // padding: 2rem;
         width:100%;
         background-color: black;
         color: #f6d300;
         position: -webkit-sticky;
                 position: sticky;
-                top: 7rem;
+                top: 10rem;
         @media screen and (max-width: 600px) {
                 // font-size: 1.1rem;
                 // padding: 1.5em 0em;
@@ -24,6 +27,38 @@
                 top: 7rem;
             }
 }
+
+@media screen and (max-width: 1000px) {
+    .bandeau { display: none; }
+ }
+@media screen and (min-width: 800px) {
+    .menu_subtitle {
+    height: 100%;
+    border-bottom: 1px solid #000;
+    // border-left: 1px solid #000;
+    &_actived {
+        color: black;
+        background-color: #f6d300;
+        border: 0;
+        //transform: rotate(180deg);
+        text-decoration: none;
+    }
+        }
+    .menu_logoh {
+        width: 33px;
+        height: 33px;
+    }
+    .menu_logoext {
+        width: 10px;
+        height: 10px;
+    }
+    .lien {
+        :visited {
+        text-decoration: none;
+        }
+    }
+ }
+
 
 .lang {
     @media screen and (min-width: 800px) {

@@ -45,7 +45,7 @@ const Header = () => (
               toggle();
               e.target.classList.toggle('menu_subtitle_actived');
             }}
-          ><h2 className="menu_subtitle "><img src={profile} className="menu_logo" alt="Contact" />A propos de moi</h2>
+          ><h2 className="menu_subtitle_desktop "><img src={profile} className="menu_logo" alt="Contact" />A propos de moi</h2>
           </Link>
           <Link
             to="/"
@@ -54,7 +54,7 @@ const Header = () => (
               toggle();
               e.target.classList.toggle('menu_subtitle_actived');
             }}
-          ><h2 className="menu_subtitle"><img src={home} className="menu_logo" alt="Accueil" />Home</h2>
+          ><h2 className="menu_subtitle_desktop"><img src={home} className="menu_logo" alt="Accueil" />Home</h2>
           </Link>
           <Link
             to="/projets"
@@ -63,7 +63,7 @@ const Header = () => (
               toggle();
               e.target.classList.toggle('menu_subtitle_actived');
             }}
-          ><h2 className="menu_subtitle"><img src={projet} className="menu_logo" alt="Projets" />Mes Projets</h2>
+          ><h2 className="menu_subtitle_desktop"><img src={projet} className="menu_logo" alt="Projets" />Mes Projets</h2>
           </Link>
           <a
             href="https://github.com/mibmae"
@@ -74,7 +74,7 @@ const Header = () => (
               e.target.classList.toggle('menu_subtitle_actived');
             }}
             rel="noreferrer"
-          ><h2 className="menu_subtitle"><img src={github} className="menu_logo" alt="Github" />Github</h2>
+          ><h2 className="menu_subtitle_desktop"><img src={github} className="menu_logo" alt="Github" />Github</h2>
           </a>
           <a
             href="https://www.linkedin.com/in/guilhem-moes/"
@@ -85,7 +85,7 @@ const Header = () => (
               e.target.classList.toggle('menu_subtitle_actived');
             }}
             rel="noreferrer"
-          ><h2 className="menu_subtitle"><img src={linkedin} className="menu_logo" alt="Linkedin" />LinkedIn</h2>
+          ><h2 className="menu_subtitle_desktop"><img src={linkedin} className="menu_logo" alt="Linkedin" />LinkedIn</h2>
           </a>
           <Link
             to="/contact"
@@ -94,10 +94,10 @@ const Header = () => (
               toggle();
               e.target.classList.toggle('menu_subtitle_actived');
             }}
-          ><h2 className="menu_subtitle"><img src={contact} className="menu_logo" alt="Contact" />Contact</h2>
+          ><h2 className="menu_subtitle_desktop"><img src={contact} className="menu_logo" alt="Contact" />Contact</h2>
           </Link>
 
-        </Sidebar>GUILHEM MOËS
+        </Sidebar><div className="name">GUILHEM MOËS</div>
         <div className="backtotop"> <a href="#" onClick={backToTop}> <img src={backtotopicon} className="backtotop" alt="Retour en haut de page" /> </a></div>
       </div>
       <div className="infos_intro-container">

@@ -1,3 +1,7 @@
+@media screen and (min-width: 1000px) {
+    .button_menu { display: none; }
+ }
+
 .side-bar {
     min-height: 100% !important;
     position: fixed;
@@ -55,7 +59,7 @@
     width: 60px;
     position: absolute;
     outline: none;
-    z-index: 9999;
+    z-index: 212000;
     background-color: black;
     border-color: #f6d300;
     border-left: 0;

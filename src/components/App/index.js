@@ -12,6 +12,7 @@ import Bandeau from 'src/components/Bandeau';
 import Projets from 'src/components/Projets';
 import Contact from 'src/components/Contact';
 import Infos from 'src/components/Infos';
+import Loadering from 'src/components/Loader';
 import {
   Widget,
   addResponseMessage,
@@ -96,10 +97,15 @@ function App() {
       socket.emit('client_message', newMessage);
     }
   };
+  const [Load, setLoad] = React.useState(Boolean);
+
+  // React.useEffect(() => {
+  //   setLoad(true);
+  // });
 
   return (
     <div className="app">
-
+      {/* <Loadering /> */}
       <Header />
       <Bandeau />
       {/* <WeatherWidget city="Saint-ambroix" /> */}
@@ -124,6 +130,7 @@ function App() {
             subtitle="C'est par ici !"
             senderPlaceHolder="Veuillez entrer un message"
             handleQuickButtonClicked={handleQuickButtonClicked}
+            
           />
         </Route>
         <Route path="/contact" exact>

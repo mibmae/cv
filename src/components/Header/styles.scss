@@ -45,11 +45,6 @@
         font-size: 5rem;
     }
 
-    @media screen and (max-width: 800px) {
-        .backtotop {
-
-        }
-    }
 
     @media screen and (min-width: 800px) and (max-width: 5000px) {
         height: 26vh;
@@ -436,7 +431,7 @@
   .container-text {
     background-image:  url(https://www.citationbonheur.fr/wp-content/uploads/2018/09/L_influence_du_paysage_sur_le_bonheur.jpg);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    background-clip: text;
     color:  #FFFFFF;
     padding: 0px 17px 1rem;
     @media screen and (max-width: 1420px) {
@@ -453,7 +448,7 @@
   .container-text2 {
     background-image:  url(https://www.citationbonheur.fr/wp-content/uploads/2018/09/L_influence_du_paysage_sur_le_bonheur.jpg);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    background-clip: text;
     color:  #FFFFFF;
     padding: 0px 17px 1rem;
     @media screen and (max-width: 1420px) {

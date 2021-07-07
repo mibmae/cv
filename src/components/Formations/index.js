@@ -2,8 +2,6 @@ import React from 'react';
 
 import './styles.scss';
 import Left from 'src/components/Left';
-import { Icon } from 'semantic-ui-react';
-import nodelogo from 'src/assets/images/node.png';
 import opquast from 'src/assets/images/opquast.svg';
 
 const Formation = () => (
@@ -24,7 +22,6 @@ const Formation = () => (
           <div className="formation_content-date">2021</div>
           <div className="formation_content-degree">Certification Opquast <img className="opquast" alt="badge opquast confirmé" src={opquast} /> </div>
         </div>
-        
         <div className="formation_content">
           <div className="formation_content-date">2004 / 2006</div>
           <div className="formation_content-degree">B.T.S Management des Unités Commerciales</div>

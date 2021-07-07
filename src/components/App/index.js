@@ -24,7 +24,7 @@ import 'react-chat-widget/lib/styles.css';
 import socket from 'src/socketio';
 import robot from 'src/assets/images/robot.png';
 import cookie from 'src/assets/images/cookies.png';
-import CookieConsent, { Cookies } from 'react-cookie-consent';
+import CookieConsent from 'react-cookie-consent';
 
 // == Composant
 function App() {
@@ -83,7 +83,6 @@ function App() {
 
   const handleNewUserMessage = (newMessage) => {
     const newMessages = newMessage.toLowerCase();
-    console.log(newMessages);
     if (newMessages === 'github') {
       addLinkSnippet(
         {
@@ -97,11 +96,6 @@ function App() {
       socket.emit('client_message', newMessage);
     }
   };
-  const [Load, setLoad] = React.useState(Boolean);
-
-  // React.useEffect(() => {
-  //   setLoad(true);
-  // });
 
   return (
     <div className="app">
@@ -130,7 +124,6 @@ function App() {
             subtitle="C'est par ici !"
             senderPlaceHolder="Veuillez entrer un message"
             handleQuickButtonClicked={handleQuickButtonClicked}
-            
           />
         </Route>
         <Route path="/contact" exact>
@@ -157,7 +150,6 @@ function App() {
         cookieName="myAwesomeCookieName2"
         style={{ background: '#2B373B' }}
         buttonClasses="buttoncookie"
-
         expires={150}
       >
         <img src={cookie} alt="cookie" style={{ width: '2%' }} /> Ici on mange des cookies{' '}

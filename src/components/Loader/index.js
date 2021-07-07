@@ -1,6 +1,5 @@
 import React from 'react';
 import './styles.scss';
-import logo from 'src/assets/images/logo.png';
 import fond from 'src/assets/images/raw.jpg';
 
 const Loadering = () => (

@@ -20,6 +20,7 @@ const backToTop = () => {
 
 const toggle = () => {
   const elements = document.querySelectorAll('.menu_subtitle_actived');
+  // eslint-disable-next-line no-plusplus
   for (let i = 0; i < elements.length; i++) {
     const current = document.getElementsByClassName('menu_subtitle_actived');
     current[0].classList.remove('menu_subtitle_actived');
@@ -102,7 +103,6 @@ const Header = () => (
       <div className="infos_intro-container">
         <div className="infos_intro">Je m'appelle Guilhem, passionné d'informatique et de développement Web depuis tout jeune, j'ai décidé d'en faire enfin mon mêtier.</div>
         <div className="infos_intro_text">"Une passion, bien plus qu'un mêtier !"</div>
-        
       </div>
     </div>
     {/* <div className="header__photo">

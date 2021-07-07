@@ -17,7 +17,13 @@
 
 
 
-
+.opquast {
+    @media screen and (max-width: 500px) {
+    width: 33%;
+    margin-left: 1rem;
+    }
+    width: 10%;
+}
 
 .formation-contenu {
     padding: 1rem;

@@ -6,14 +6,18 @@
     display: block;
     left: 0;
     z-index: 1000;
-    -webkit-animation: fadeInThenOut 4s linear forwards;
-    animation: fadeInThenOut 4s linear forwards;
+    -webkit-animation: fadeInThenOut 3s linear forwards;
+    animation: fadeInThenOut 3s linear forwards;
 }
 
 .loaderb {
-    width: 100%;
-    height: 100vh;
-
+    @media screen and (min-width: 800px) {
+        width: 100%;
+        height: 100vh;
+        } 
+    @media screen and (max-width: 800px) {
+        display: none;
+        } 
 }
 
     @keyframes fadeInThenOut{

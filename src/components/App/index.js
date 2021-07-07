@@ -105,7 +105,7 @@ function App() {
 
   return (
     <div className="app">
-      {/* <Loadering /> */}
+      <Loadering />
       <Header />
       <Bandeau />
       {/* <WeatherWidget city="Saint-ambroix" /> */}

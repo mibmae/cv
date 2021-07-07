@@ -13,7 +13,6 @@ import home from 'src/assets/images/logo-home.png';
 import projet from 'src/assets/images/projet.png';
 import profile from 'src/assets/images/profile.png';
 import backtotopicon from 'src/assets/images/bouton-haut.png';
-import logo from 'src/assets/images/logo.png';
 
 const backToTop = () => {
 
@@ -103,6 +102,7 @@ const Header = () => (
       <div className="infos_intro-container">
         <div className="infos_intro">Je m'appelle Guilhem, passionné d'informatique et de développement Web depuis tout jeune, j'ai décidé d'en faire enfin mon mêtier.</div>
         <div className="infos_intro_text">"Une passion, bien plus qu'un mêtier !"</div>
+        
       </div>
     </div>
     {/* <div className="header__photo">

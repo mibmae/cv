@@ -14,7 +14,7 @@ const Formation = () => (
 
         <div className="formation_title">Formation</div>
         <div className="formation_content">
-          <div className="formation_content-date">2019 / 2020</div>
+          <div className="formation_content-date">2020 / 2021</div>
           <div className="formation_content-degree">Titre Professionnel Développeur Web</div>
         </div>
         <div className="formation_content-where"> O'CLOCK, 700 heures de formation intensives</div>
@@ -53,6 +53,21 @@ const Formation = () => (
         <div className="experiences_summary-tasks">- Authentification - Login avec JsonWebToken</div>
         <div className="experiences_summary-tasks">- Utilisation de Socket.io pour une fonctionnalité de Chat</div>
         <div className="experiences_summary-tasks">- Consommation d'un API maison, et Publique</div>
+        <div className="experiences_space" />
+        <div className="experiences_container">
+          <div className="experiences_name">Création et maintenance d'un site web pour une association</div>
+          <div className="experiences_date">06.2020 - Aujourd'hui</div>
+        </div>
+        <div className="experiences_summary-brand">Salindres Tennis | www.salindrestennis.fr</div>
+        <div className="experiences_summary">Création partie front et back</div>
+        <div className="experiences_summary">Site de présentation et d'actualités de l'association</div>
+        <div />
+        <div className="experiences_summary">Création de la partie front d'un site/application de rencontre pour des personnes arborant un look atypique.</div>
+        <div className="experiences_summary-tasks">- Html</div>
+        <div className="experiences_summary-tasks">- CSS</div>
+        <div className="experiences_summary-tasks">- PHP</div>
+        <div className="experiences_summary-tasks">- Javascript</div>
+        <div className="experiences_summary-tasks">- Partie administration</div>
         <div className="experiences_space" />
         <div className="experiences_container">
           <div className="experiences_name">Vendeur Technique</div>

@@ -4,6 +4,7 @@
         justify-content: space-between;
         padding: 2rem;
         text-align: center;
+        display: flex;
         width:100%;
         background-color: #f6d300;
         color: black;
@@ -20,7 +21,18 @@
                 margin-top: 0rem;
                 position: fixed;
                 bottom: 0;
+                padding: 1rem;
             }
 }
 
-
+.menu_logo_footer {
+    @media screen and (max-width: 500px) {
+        width: 26px;
+    vertical-align: sub;
+    margin-right: 1rem;
+    }
+    width: 37px;
+    vertical-align: sub;
+    margin-right: 13rem;
+    // margin: 0 4px;
+}

@@ -9,7 +9,7 @@ import english from 'src/assets/images/english.png';
 import french from 'src/assets/images/french.png';
 
 const Left = () => (
-  <div className="col-3 bord mob"> <div className="titlea">Follow Me</div>
+  <div className="col-3 bord mob"> <div className="titlea">Suivez-Moi</div>
 
     <div className="row-followme"><img src={logoLink} className="formation_logo" alt="linkedinlogo" /><a href="http://www.linkedIn.com/in/guilhem-moes" target="_blank" rel="noreferrer">LinkedIn</a></div>
     <div className="titlea">Contact</div>
@@ -18,16 +18,16 @@ const Left = () => (
       <div className="row-contact"><img src={mail} className="row-contact_logo" alt="linkedinlogo" />guilhem.moes@gmail.com</div>
       <div className="row-contact"><img src={location} className="row-contact_logo" alt="linkedinlogo" />9 rue de la boucherie 30500 Saint-Ambroix</div>
     </div>
-    <div className="titlea">Skills</div>
+    <div className="titlea">Compétences</div>
     <div className="skills_container">
       <div className="row-skills"><img src={skills} className="row-skills_logo" alt="linkedinlogo" /></div>
     </div>
-    <div className="titlea">Langages</div>
+    <div className="titlea">Langues</div>
     <div className="langage_container">
       <div className="row-language"><img src={english} className="row-language_logo" alt="linkedinlogo" />Anglais </div>
       <div className="row-language"><img src={french} className="row-language_logo" alt="linkedinlogo" />Français </div>
     </div>
-    <div className="titlea">Hobbies</div>
+    <div className="titlea">Loisirs</div>
     <div className="contact_container">
       <div className="row-contact"><img src={mail} className="row-contact_logo" alt="linkedinlogo" />Technologies </div>
       <div className="row-contact"><img src={mail} className="row-contact_logo" alt="linkedinlogo" />Musique </div>

@@ -40,7 +40,7 @@ const Bandeau = () => (
         toggle();
         e.target.classList.toggle('menu_subtitle_actived');
       }}
-    ><h2 className="menu_subtitle"><img src={projet} className="menu_logo" alt="Projets" />Home</h2>
+    ><h2 className="menu_subtitle"><img src={home} className="menu_logo" alt="Projets" />Home</h2>
     </Link>
     <Link
       to="/projets"

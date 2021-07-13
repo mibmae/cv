@@ -28,15 +28,34 @@ import CookieConsent from 'react-cookie-consent';
 
 // == Composant
 function App() {
+  const chat = document.getElementsByClassName('.active');
+  console.log(chat);
   socket.emit('connection');
 
   socket.on('private_message', (res) => {
-    if (res === 'Mon adresse mail est : mibmae@gmail.com.') {
+    console.log(res);
+    // if (res === 'Mon adresse mail est : mibmae@gmail.com.') {
+    //   addLinkSnippet(
+    //     {
+    //       title: "Cliquez ici pour m'envoyer un message",
+    //       link: 'https://www.guilhem-moes.xyz/contact',
+    //       target: '_self',
+    //     },
+    //   );
+    // }
+    if (res === "Voici les projets sur lesquels j'ai travaillé ou je travaille encore. As Salindres Tennis, Atypeek") {
       addLinkSnippet(
         {
-          title: "Cliquez ici pour m'envoyer un message",
-          link: 'https://www.guilhem-moes.xyz/contact',
-          target: '_self',
+          title: "As Salindres Tennis",
+          link: 'https://www.salindrestennis.fr',
+          target: '_blank',
+        },
+      );
+      addLinkSnippet(
+        {
+          title: "Atypeek",
+          link: 'https://www.atypeek.xyz',
+          target: '_blank',
         },
       );
     }
@@ -59,15 +78,24 @@ function App() {
       value: 'Github',
     },
     {
-      label: 'Téléphone',
-      value: 'Téléphone',
+      label: 'Projets',
+      value: 'Projets',
     },
     ],
   );
 
   const handleQuickButtonClicked = (button) => {
     addUserMessage(button);
-    if (button === 'Github') {
+    if (button === 'Mail') {
+      addLinkSnippet(
+        {
+          title: "Cliquez ici pour m'envoyer un message",
+          link: 'https://www.guilhem-moes.xyz/contact',
+          target: '_self',
+        },
+      );
+    }
+    else if (button === 'Github') {
       addLinkSnippet(
         {
           title: "Voici l'adresse de mon repo Github",
@@ -89,6 +117,16 @@ function App() {
           title: "Voici l'adresse de mon repo Githubs",
           link: 'https://github.com/mibmae',
           target: '_blank',
+        },
+      );
+    }
+    else if (newMessages === 'mail' || newMessages === 'Mail') {
+      console.log(newMessages);
+      addLinkSnippet(
+        {
+          title: "Cliquez ici pour m'envoyer un message",
+          link: 'https://www.guilhem-moes.xyz/contact',
+          target: '_self',
         },
       );
     }

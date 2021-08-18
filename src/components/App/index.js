@@ -28,12 +28,9 @@ import CookieConsent from 'react-cookie-consent';
 
 // == Composant
 function App() {
-  const chat = document.getElementsByClassName('.active');
-  console.log(chat);
   socket.emit('connection');
 
   socket.on('private_message', (res) => {
-    console.log(res);
     // if (res === 'Mon adresse mail est : mibmae@gmail.com.') {
     //   addLinkSnippet(
     //     {
@@ -46,18 +43,26 @@ function App() {
     if (res === "Voici les projets sur lesquels j'ai travaillé ou je travaille encore. As Salindres Tennis, Atypeek") {
       addLinkSnippet(
         {
-          title: "As Salindres Tennis",
+          title: 'As Salindres Tennis',
           link: 'https://www.salindrestennis.fr',
           target: '_blank',
         },
       );
       addLinkSnippet(
         {
-          title: "Atypeek",
+          title: 'Atypeek',
           link: 'https://www.atypeek.xyz',
           target: '_blank',
         },
       );
+        <img src="robot.png" />;
+        addLinkSnippet(
+          {
+            title: 'Le Domaine de Cyr',
+            link: 'https://cyr.netlify.app',
+            target: '_blank',
+          },
+        );
     }
     else {
       addResponseMessage(res);
@@ -114,14 +119,13 @@ function App() {
     if (newMessages === 'github') {
       addLinkSnippet(
         {
-          title: "Voici l'adresse de mon repo Githubs",
+          title: "Voici l'adresse de mon repo Github",
           link: 'https://github.com/mibmae',
           target: '_blank',
         },
       );
     }
     else if (newMessages === 'mail' || newMessages === 'Mail') {
-      console.log(newMessages);
       addLinkSnippet(
         {
           title: "Cliquez ici pour m'envoyer un message",
@@ -147,10 +151,15 @@ function App() {
           <Widget
             handleNewUserMessage={handleNewUserMessage}
             profileAvatar={robot}
+            profileClientAvatar={robot}
+            titleAvatar={robot}
             title="Me contacter"
             subtitle="C'est par ici !"
             senderPlaceHolder="Veuillez entrer un message"
             handleQuickButtonClicked={handleQuickButtonClicked}
+            autofocus
+            showTimeStamp={false}
+            emojis
           />
         </Route>
         <Route path="/projets" exact>

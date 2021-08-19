@@ -13,6 +13,7 @@ import home from 'src/assets/images/logo-home.png';
 import projet from 'src/assets/images/projet.png';
 import profile from 'src/assets/images/profile.png';
 import backtotopicon from 'src/assets/images/bouton-haut.png';
+import logo from 'src/assets/images/logo.png';
 
 const backToTop = () => {
 
@@ -97,7 +98,8 @@ const Header = () => (
           ><h2 className="menu_subtitle_desktop"><img src={contact} className="menu_logo" alt="Contact" />Contact</h2>
           </Link>
 
-        </Sidebar><div className="name">GUILHEM MOËS</div>
+        </Sidebar>
+        <div className="name">GUILHEM MOËS</div>
         <div className="backtotop"> <a href="#" onClick={backToTop}> <img src={backtotopicon} className="backtotop" alt="Retour en haut de page" /> </a></div>
       </div>
       <div className="infos_intro-container">

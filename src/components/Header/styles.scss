@@ -112,11 +112,11 @@
 .name {
     font-family: 'Yomogi';
     color: grey;
-    font-size:2rem;
+    font-size:1rem;
     padding:1rem;
     @media screen and (max-width:1300px) {
-        // padding: 0.3rem;
-        font-size: 0.5rem;
+        margin-left: 0.3rem;
+        font-size: 0.3rem;
      }
 }
 
@@ -504,3 +504,4 @@
         
         }
 }
+

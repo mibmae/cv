@@ -35,9 +35,29 @@ const Formation = () => (
 
         <div className="experiences_title">Expériences</div>
         <div className="experiences_container">
+          <div className="experiences_name">Création et maintenance d'un site web pour une maison d'hôtes</div>
+          <div className="experiences_date">07.2021 - Aujourd'hui</div>
+        </div>
+        <div className="experiences_summary-brand">Le Domaine de Cyr | www.ledomainedecyr.fr</div>
+        <div className="experiences_summary">Lead Dev Front & back</div>
+        <div className="experiences_summary">Création d'un projet de développement Web</div>
+        <div className="experiences_summary-tasks">- Création du cahier des charges</div>
+        <div className="experiences_summary-tasks-under">- Définition des besoins / Moyens / Technos</div>
+        <div className="experiences_summary-tasks">- Création des wireframes</div>
+        <div className="experiences_summary-tasks">- Etablissement des User-Stories</div>
+        <div className="experiences_summary-tasks">- Veille technologique</div>
+        <div />
+        <div className="experiences_summary">Création de la partie front d'un site de présentation et de réservation de chambres d'hôte</div>
+        <div className="experiences_summary-tasks">- React</div>
+        <div className="experiences_summary-tasks">- Redux (pour la gestion d'état)</div>
+        {/* <div className="experiences_summary-tasks">- Authentification - Login avec JsonWebToken</div>
+        <div className="experiences_summary-tasks">- Utilisation de Socket.io pour une fonctionnalité de Chat</div>
+        <div className="experiences_summary-tasks">- Consommation d'un API maison, et Publique</div> */}
+        <div className="experiences_container">
           <div className="experiences_name">Développeur Web Front</div>
           <div className="experiences_date">04.2021 - 05.2021</div>
         </div>
+        
         <div className="experiences_summary-brand">Atypeek | www.atypeek.xyz</div>
         <div className="experiences_summary">Lead Dev Front & référent Techno</div>
         <div className="experiences_summary">Création d'un projet de développement Web</div>
@@ -53,6 +73,8 @@ const Formation = () => (
         <div className="experiences_summary-tasks">- Authentification - Login avec JsonWebToken</div>
         <div className="experiences_summary-tasks">- Utilisation de Socket.io pour une fonctionnalité de Chat</div>
         <div className="experiences_summary-tasks">- Consommation d'un API maison, et Publique</div>
+        <div className="experiences_space" />
+       
         <div className="experiences_space" />
         <div className="experiences_container">
           <div className="experiences_name">Création et maintenance d'un site web pour une association</div>

@@ -12,8 +12,8 @@ import contact from 'src/assets/images/contact.png';
 import home from 'src/assets/images/logo-home.png';
 import projet from 'src/assets/images/projet.png';
 import profile from 'src/assets/images/profile.png';
-import backtotopicon from 'src/assets/images/bouton-haut.png';
-import logo from 'src/assets/images/logo.png';
+import backtotopicone from 'src/assets/images/bouton-haut.png';
+import backtotopicon from 'src/assets/images/logo.png';
 
 const backToTop = () => {
 

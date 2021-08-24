@@ -25,6 +25,7 @@ import socket from 'src/socketio';
 import robot from 'src/assets/images/robot.png';
 import cookie from 'src/assets/images/cookies.png';
 import CookieConsent from 'react-cookie-consent';
+// import WeatherWidget from 'src/components/WeatherWidget';
 
 // == Composant
 function App() {
@@ -144,6 +145,7 @@ function App() {
       <Loadering />
       <Header />
       <Bandeau />
+      {/* <Infos /> */}
       {/* <WeatherWidget city="Saint-ambroix" /> */}
       <Switch>
         <Route path="/" exact>

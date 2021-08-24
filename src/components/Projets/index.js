@@ -51,25 +51,7 @@ const Projets = () => {
                 <img className="mySlides w3-animate-fading" src={image2} alt="paysage" />
                 <img className="mySlides w3-animate-fading" src={image3} alt="paysage" />
               </div> */}
-              <div className="projets_capt" data-aos="zoom-out" data-aos-duration="2000">
-                <figure>
-                  <a href="http://www.atypeek.xyz" target="_blank" rel="noreferrer">
-
-                    <img src={image1} className="imga" alt="paysage" />
-                  </a>
-                  <figcaption>Atypeek : Projet de fin de formation (2021)</figcaption>
-                </figure>
-              </div>
-              <div className="projets_capt2" data-aos="zoom-in-down" data-aos-duration="3000">
-
-                <figure>
-                  <a href="http://www.salindrestennis.fr" target="_blank" rel="noreferrer">
-                    <img src={image2} className="imga" alt="paysage" />
-                  </a>
-                  <figcaption>As Salindres Tennis : Site du club de Tennis de Salindres (2019 - Aujourd'hui)</figcaption>
-                </figure>
-              </div>
-              <div className="projets_capt3" data-aos="zoom-in-up" data-aos-duration="3000">
+              <div className="projets_capt1" data-aos="zoom-in-up" data-aos-duration="3000">
 
                 <figure>
                   <a href="http://cyr.netlify.app" target="_blank" rel="noreferrer">
@@ -78,6 +60,24 @@ const Projets = () => {
                   <figcaption>La Deumeure de Cyr - Chambre d'hôte dans le pays de Salers (2021 - )</figcaption>
                 </figure>
               </div>
+              <div className="projets_capt2" data-aos="zoom-out" data-aos-duration="2000">
+                <figure>
+                  <a href="http://www.atypeek.xyz" target="_blank" rel="noreferrer">
+                    <img src={image1} className="imga" alt="paysage" />
+                  </a>
+                  <figcaption>Atypeek : Projet de fin de formation (2021)</figcaption>
+                </figure>
+              </div>
+              <div className="projets_capt3" data-aos="zoom-in-down" data-aos-duration="3000">
+
+                <figure>
+                  <a href="http://www.salindrestennis.fr" target="_blank" rel="noreferrer">
+                    <img src={image2} className="imga" alt="paysage" />
+                  </a>
+                  <figcaption>As Salindres Tennis : Site du club de Tennis de Salindres (2019 - Aujourd'hui)</figcaption>
+                </figure>
+              </div>
+
             </div>
           </div>
         </div>

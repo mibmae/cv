@@ -38,7 +38,7 @@ const Formation = () => (
           <div className="experiences_name">Création et maintenance d'un site web pour une maison d'hôtes</div>
           <div className="experiences_date">07.2021 - Aujourd'hui</div>
         </div>
-        <div className="experiences_summary-brand">Le Domaine de Cyr | www.ledomainedecyr.fr</div>
+        <div className="experiences_summary-brand">La Demeure de Cyr | <a href="http://cyr.netlify.app" target="_blank" rel="noreferrer">www.lademeuredecyr.fr</a></div>
         <div className="experiences_summary">Lead Dev Front & back</div>
         <div className="experiences_summary">Création d'un projet de développement Web</div>
         <div className="experiences_summary-tasks">- Création du cahier des charges</div>
@@ -57,8 +57,8 @@ const Formation = () => (
           <div className="experiences_name">Développeur Web Front</div>
           <div className="experiences_date">04.2021 - 05.2021</div>
         </div>
-        
-        <div className="experiences_summary-brand">Atypeek | www.atypeek.xyz</div>
+
+        <div className="experiences_summary-brand">Atypeek | <a href="https://www.atypeek.io" target="_blank" rel="noreferrer">www.atypeek.io</a></div>
         <div className="experiences_summary">Lead Dev Front & référent Techno</div>
         <div className="experiences_summary">Création d'un projet de développement Web</div>
         <div className="experiences_summary-tasks">- Création du cahier des charges</div>
@@ -74,13 +74,13 @@ const Formation = () => (
         <div className="experiences_summary-tasks">- Utilisation de Socket.io pour une fonctionnalité de Chat</div>
         <div className="experiences_summary-tasks">- Consommation d'un API maison, et Publique</div>
         <div className="experiences_space" />
-       
+
         <div className="experiences_space" />
         <div className="experiences_container">
           <div className="experiences_name">Création et maintenance d'un site web pour une association</div>
           <div className="experiences_date">06.2020 - Aujourd'hui</div>
         </div>
-        <div className="experiences_summary-brand">Salindres Tennis | www.salindrestennis.fr</div>
+        <div className="experiences_summary-brand">Salindres Tennis | <a href="https://www.salindrestennis.fr" target="_blank" rel="noreferrer">www.salindrestennis.fr</a></div>
         <div className="experiences_summary">Création partie front et back</div>
         <div className="experiences_summary">Site de présentation et d'actualités de l'association</div>
         <div />

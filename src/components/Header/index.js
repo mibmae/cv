@@ -3,7 +3,7 @@ import {
   Link,
 } from 'react-router-dom';
 import './styles.scss';
-import Sidebar from 'src/components/Sidebar';
+import Sidebar from 'src/components/Sidebars';
 // import Photo from 'https://pvtistes.net/forum/attachments/comment-obtenir-son-pvt-canada-351/21739d1393069621-photos-didentite-demande-de-permis-eic-pvt-jp-etc-photo-identite.jpg';
 
 import github from 'src/assets/images/github.png';

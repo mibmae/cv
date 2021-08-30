@@ -3,6 +3,12 @@
     width: 100%; 
 }
 
+@media screen and (max-width: 800px) {
+    .mob {
+        display:none;
+    }
+}
+
 .col {
     padding: 1rem;
     border: 1px solid darkgrey;
@@ -83,9 +89,9 @@
     border-radius: 2rem;
 }
   
-@media screen and (max-width: 800px) {
-    .mob {
-        display:none;
-    }
-}
+// @media screen and (max-width: 800px) {
+//     .mob {
+//         display:none;
+//     }
+// }
 

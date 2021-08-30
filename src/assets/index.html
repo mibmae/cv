@@ -26,6 +26,18 @@
         <div id="root"></div>
     </body>
     <script src="https://server-mibmae.herokuapp.com/socket.io/socket.io.js"></script>
+    <script language="JavaScript">
+      function scrollAuto()
+        {
+        window.scrollBy(0,1)
+        setTimeout('scrollAuto()',1);
+        }
+      
+      if (document.layers || document.all)
+        {
+        scrollAuto()
+        }
+      </script>
     <!-- <script>
         function getResolution() {
         alert("Votre résolution d'écran est: " + screen.width + "x" + screen.height);

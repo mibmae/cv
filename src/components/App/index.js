@@ -11,6 +11,7 @@ import { Switch, Route } from 'react-router-dom';
 import Bandeau from 'src/components/Bandeau';
 import Projets from 'src/components/Projets';
 import Contact from 'src/components/Contact';
+import Left from 'src/components/Left';
 import Infos from 'src/components/Infos';
 import Loadering from 'src/components/Loader';
 import {
@@ -145,7 +146,7 @@ function App() {
       <Loadering />
       <Header />
       <Bandeau />
-      {/* <Infos /> */}
+      {/* <Left /> */}
       {/* <WeatherWidget city="Saint-ambroix" /> */}
       <Switch>
         <Route path="/" exact>
